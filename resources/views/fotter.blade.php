@@ -7,10 +7,8 @@
     <title>index</title>
 </head>
 <body>
-
-<h1>Freelancing</h1>
-
-
-
+    <p>
+    freelancing
+    </p>
 </body>
 </html>
