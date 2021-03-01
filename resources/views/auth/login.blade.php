@@ -1,4 +1,4 @@
-<p>Login 
+<p>Login really
 </p>
 <x-guest-layout>
     <x-auth-card>
