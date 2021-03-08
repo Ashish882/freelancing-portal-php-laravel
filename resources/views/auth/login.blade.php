@@ -136,15 +136,29 @@
                 <div>
                     <h1 class="logo-badge text-whitesmoke"><span class="fa fa-user-circle"></span></h1>
                 </div>
+
+@if ($errors->any())
+
+
+{{ __('Whoops! Something went wrong.') }}
+    <ul class="mt-3 list-disc list-inside text-sm text-red-600">
+        @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+        @endforeach
+    </ul>
+</div>
+@endif
+
                     <h3 class="text-whitesmoke">Sign In Template</h3>
                     <p class="text-whitesmoke">Sign In</p>
                 <div class="container-content">
-                    <form class="margin-t">
+                    <form ethod="post" action="login" class="margin-t">
+                    @csrf
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Username" required="">
+                            <input name="email" type="text" class="form-control" placeholder="email" required="">
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" placeholder="*****" required="">
+                            <input name="password"password type="password" class="form-control" placeholder="*****" required="">
                         </div>
                         <button type="submit" class="form-button button-l margin-b">Sign In</button>
         
@@ -152,7 +166,7 @@
                         <p class="text-whitesmoke text-center"><small>Do not have an account?</small></p>
                         <a class="text-darkyellow" href="#"><small>Sign Up</small></a>
                     </form>
-                    <p class="margin-t text-whitesmoke"><small> Your Name &copy; 2018</small> </p>
+                    <p class="margin-t text-whitesmoke"><small> Freelancer &copy; 2021</small> </p>
                 </div>
             </div>
 </body>
