@@ -152,7 +152,7 @@
                     <h3 class="text-whitesmoke">Sign In Template</h3>
                     <p class="text-whitesmoke">Sign In</p>
                 <div class="container-content">
-                    <form ethod="post" action="login" class="margin-t">
+                    <form method="post" action="login" class="margin-t">
                     @csrf
                         <div class="form-group">
                             <input name="email" type="text" class="form-control" placeholder="email" required="">
