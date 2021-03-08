@@ -55,7 +55,7 @@
         </form>
     </x-auth-card>
 </x-guest-layout>  */ ?>
-
+<!--
 
 @extends('header')
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -117,3 +117,44 @@
 @extends('footer')
 
 
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<body class="main-bg">
+        <div class="login-container text-c animated flipInX">
+                <div>
+                    <h1 class="logo-badge text-whitesmoke"><span class="fa fa-user-circle"></span></h1>
+                </div>
+                    <h3 class="text-whitesmoke">Sign In Template</h3>
+                    <p class="text-whitesmoke">Sign In</p>
+                <div class="container-content">
+                    <form class="margin-t">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Username" required="">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="*****" required="">
+                        </div>
+                        <button type="submit" class="form-button button-l margin-b">Sign In</button>
+        
+                        <a class="text-darkyellow" href="#"><small>Forgot your password?</small></a>
+                        <p class="text-whitesmoke text-center"><small>Do not have an account?</small></p>
+                        <a class="text-darkyellow" href="#"><small>Sign Up</small></a>
+                    </form>
+                    <p class="margin-t text-whitesmoke"><small> Your Name &copy; 2018</small> </p>
+                </div>
+            </div>
+</body>
+</body>
+</html>
