@@ -1,4 +1,4 @@
-<x-guest-layout>
+<?php /*<x-guest-layout>
     <x-auth-card>
         <x-slot name="logo">
             <a href="/">
@@ -56,4 +56,62 @@
             </div>
         </form>
     </x-auth-card>
-</x-guest-layout>
+</x-guest-layout> */?>
+
+
+
+
+@extends('header')
+
+<div class="container">
+<h1>Login</h1>
+
+
+@if ($errors->any())
+    <div >
+        <div class="font-medium text-red-600">
+            {{ __('Whoops! Something went wrong.') }}
+        </div>
+
+        <ul class="mt-3 list-disc list-inside text-sm text-red-600">
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+
+
+
+<form  method="POST" action="register">
+@csrf
+<div class="form-group">
+    <label for="name">Name:</label>
+    <input name="name" type="text" class="form-control" placeholder="Enter Name" id="name">
+  </div>
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input name="email" type="email" class="form-control" placeholder="Enter email" id="email">
+  </div>
+  <div class="form-group">
+    <label for="login_type">Login Type:</label>
+    <input name="login_type" type="login_type" class="form-control" placeholder="Enter login type" id="login_type">
+  </div>
+
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input name="password" type="password" class="form-control" placeholder="Enter password" id="pwd">
+  </div>
+
+  
+  <div class="form-group">
+    <label for="password_confirmation">Confirm Password:</label>
+    <input name="password_confirmation" type="password" class="form-control" placeholder="Enter password" id="password_confirmation">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+
+@extends('footer')
+
