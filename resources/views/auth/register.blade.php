@@ -48,14 +48,7 @@
                             </div>
                             <div class="form-group">
                                 <div class="maxl">
-                                    <label class="radio inline">
-                                        <input type="radio" name="gender" value="male" checked>
-                                        <span> Male </span>
-                                    </label>
-                                    <label class="radio inline">
-                                        <input type="radio" name="gender" value="female">
-                                        <span>Female </span>
-                                    </label>
+                                  
                                 </div>
                             </div>
                         </div>
@@ -63,20 +56,8 @@
                             <div class="form-group">
                                 <input type="email" class="form-control" placeholder="Your Email *" value="" />
                             </div>
-                            <div class="form-group">
-                                <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Your Phone *" value="" />
-                            </div>
-                            <div class="form-group">
-                                <select class="form-control">
-                                    <option class="hidden" selected disabled>Please select your Sequrity Question</option>
-                                    <option>What is your Birthdate?</option>
-                                    <option>What is Your old Phone Number</option>
-                                    <option>What is your Pet Name?</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Enter Your Answer *" value="" />
-                            </div>
+                            
+                           
                             <input type="submit" class="btnRegister" value="Click To Register" />
                         </div>
                     </div>
@@ -94,10 +75,7 @@
                             <div class="form-group">
                                 <input type="email" class="form-control" placeholder="Email *" value="" />
                             </div>
-                            <div class="form-group">
-                                <input type="text" maxlength="10" minlength="10" class="form-control" placeholder="Phone *" value="" />
-                            </div>
-
+                            
 
                         </div>
                         <div class="col-md-6">
@@ -107,17 +85,8 @@
                             <div class="form-group">
                                 <input type="password" class="form-control" placeholder="Confirm Password *" value="" />
                             </div>
-                            <div class="form-group">
-                                <select class="form-control">
-                                    <option class="hidden" selected disabled>Please select your Sequrity Question</option>
-                                    <option>What is your Birthdate?</option>
-                                    <option>What is Your old Phone Number</option>
-                                    <option>What is your Pet Name?</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="`Answer *" value="" />
-                            </div>
+                            
+                            
                             <input type="submit" class="btnRegister" value="Register" />
                         </div>
                     </div>

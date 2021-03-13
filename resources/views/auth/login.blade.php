@@ -32,8 +32,8 @@
                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                     <h3 class="register-heading">Login </h3>
                     <div class="row register-form">
-                        <div class="col-md-6">
-                           <div class="col-md-6">
+                        <div class="col-md-12">
+                           <div class="col-md-12">
                          
                          
                                 
