@@ -1,117 +1,89 @@
-<?php /*<x-guest-layout>
-    <x-auth-card>
-        <x-slot name="logo">
-            <a href="/">
-                <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
-            </a>
-        </x-slot>
 
-        <!-- Validation Errors -->
-        <x-auth-validation-errors class="mb-4" :errors="$errors" />
+ @include('common.header')
+<div class="register" style="padding-top:80px;">
+    <div class="row">
 
-        <form method="POST" action="{{ route('register') }}">
-            @csrf
-
-            <!-- Name -->
-            <div>
-                <x-label for="name" :value="__('Name')" />
-
-                <x-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus />
-            </div>
-
-            <!-- Email Address -->
-            <div class="mt-4">
-                <x-label for="email" :value="__('Email')" />
-
-                <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
-            </div>
-
-            <!-- Password -->
-            <div class="mt-4">
-                <x-label for="password" :value="__('Password')" />
-
-                <x-input id="password" class="block mt-1 w-full"
-                                type="password"
-                                name="password"
-                                required autocomplete="new-password" />
-            </div>
-
-            <!-- Confirm Password -->
-            <div class="mt-4">
-                <x-label for="password_confirmation" :value="__('Confirm Password')" />
-
-                <x-input id="password_confirmation" class="block mt-1 w-full"
-                                type="password"
-                                name="password_confirmation" required />
-            </div>
-
-            <div class="flex items-center justify-end mt-4">
-                <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
-                    {{ __('Already registered?') }}
-                </a>
-
-                <x-button class="ml-4">
-                    {{ __('Register') }}
-                </x-button>
-            </div>
-        </form>
-    </x-auth-card>
-</x-guest-layout> */?>
-
-
-
-
-@extends('header')
-
-<div class="container">
-<h1>Login</h1>
-
-
-@if ($errors->any())
-    <div >
-        <div class="font-medium text-red-600">
-            {{ __('Whoops! Something went wrong.') }}
+        <div class="col-md-3 register-left">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS96qJPx-TucFWrrAux4IlepfxxHehmGSrDmQ&usqp=CAU" alt="" />
+            <h3>Welcome</h3>
+            <p>You are few steps away from earning your own money!</p>
+            <input type="submit" name="" value=" Click To Login" /><br />
         </div>
+        <div class="col-md-9 register-right" >
+            <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist"  >
+                <li class="nav-item" >
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Employee</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Hirer</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <h3 class="register-heading">Apply as a Employee</h3>
+                    <div class="row register-form">
+                        <div class="col-md-10">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="First Name *" value="" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Last Name *" value="" />
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password *" value="" />
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Confirm Password *" value="" />
+                            </div>
+                            <div class="form-group">
+                                <div class="maxl">
+                                  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Your Email *" value="" />
+                            </div>
+                            
+                           
+                            <input type="submit" class="btnRegister" value="Click To Register" />
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <h3 class="register-heading">Apply as a Hirer</h3>
+                    <div class="row register-form">
+                        <div class="col-md-10">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="First Name *" value="" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Last Name *" value="" />
+                            </div>
+                            
+                            
 
-        <ul class="mt-3 list-disc list-inside text-sm text-red-600">
-            @foreach ($errors->all() as $error)
-                <li>{{ $error }}</li>
-            @endforeach
-        </ul>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password *" value="" />
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Confirm Password *" value="" />
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email *" value="" />
+                            </div>
+                            <input type="submit" class="btnRegister" value="Register" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-@endif
 
-
-
-<form  method="POST" action="register">
-@csrf
-<div class="form-group">
-    <label for="name">Name:</label>
-    <input name="name" type="text" class="form-control" placeholder="Enter Name" id="name">
-  </div>
-  <div class="form-group">
-    <label for="email">Email address:</label>
-    <input name="email" type="email" class="form-control" placeholder="Enter email" id="email">
-  </div>
-  <div class="form-group">
-    <label for="login_type">Login Type:</label>
-    <input name="login_type" type="login_type" class="form-control" placeholder="Enter login type" id="login_type">
-  </div>
-
-  <div class="form-group">
-    <label for="pwd">Password:</label>
-    <input name="password" type="password" class="form-control" placeholder="Enter password" id="pwd">
-  </div>
-
-  
-  <div class="form-group">
-    <label for="password_confirmation">Confirm Password:</label>
-    <input name="password_confirmation" type="password" class="form-control" placeholder="Enter password" id="password_confirmation">
-  </div>
-
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
 </div>
 
-@extends('footer')
-
+@include('common.footer')
