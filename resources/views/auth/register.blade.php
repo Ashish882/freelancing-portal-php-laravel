@@ -77,9 +77,9 @@
             <p>You are few steps away from earning your own money!</p>
             <input type="submit" name="" value=" Click To Login" /><br />
         </div>
-        <div class="col-md-9 register-right">
-            <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
-                <li class="nav-item">
+        <div class="col-md-9 register-right" >
+            <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist"  >
+                <li class="nav-item" >
                     <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Employee</a>
                 </li>
                 <li class="nav-item">
@@ -90,7 +90,7 @@
                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                     <h3 class="register-heading">Apply as a Employee</h3>
                     <div class="row register-form">
-                        <div class="col-md-6">
+                        <div class="col-md-10">
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="First Name *" value="" />
                             </div>
@@ -109,7 +109,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-10">
                             <div class="form-group">
                                 <input type="email" class="form-control" placeholder="Your Email *" value="" />
                             </div>
@@ -122,20 +122,18 @@
                 <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                     <h3 class="register-heading">Apply as a Hirer</h3>
                     <div class="row register-form">
-                        <div class="col-md-6">
+                        <div class="col-md-10">
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="First Name *" value="" />
                             </div>
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="Last Name *" value="" />
                             </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Email *" value="" />
-                            </div>
+                            
                             
 
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-10">
                             <div class="form-group">
                                 <input type="password" class="form-control" placeholder="Password *" value="" />
                             </div>
@@ -143,7 +141,9 @@
                                 <input type="password" class="form-control" placeholder="Confirm Password *" value="" />
                             </div>
                             
-                            
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email *" value="" />
+                            </div>
                             <input type="submit" class="btnRegister" value="Register" />
                         </div>
                     </div>
@@ -154,6 +154,51 @@
 
 </div>
 
+
+
+<footer class="footer">
+<div class="l-footer">
+
+
+</div>
+<ul class="r-footer">
+<li>
+  <h2>
+Social</h2>
+<ul class="box">
+<li><a href="#">Facebook</a></li>
+<li><a href="#">Twitter</a></li>
+<li><a href="#">Pinterest</a></li>
+<li><a href="#">Dribbble</a></li>
+</ul>
+</li>
+<li class="features">
+  <h2>
+Information</h2>
+<ul class="box h-box">
+<li><a href="#">Blog</a></li>
+<li><a href="#">Pricing</a></li>
+<li><a href="#">Sales</a></li>
+<li><a href="#">Tickets</a></li>
+<li><a href="#">Certifications</a></li>
+<li><a href="#">Customer Service</a></li>
+</ul>
+</li>
+<li>
+  <h2>
+Legal</h2>
+<ul class="box">
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Terms of Use</a></li>
+<li><a href="#">Contract</a></li>
+</ul>
+</li>
+</ul>
+<div class="b-footer">
+<p>
+All rights reserved by ©FREELANCER 2021</p>
+</div>
+</footer>
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

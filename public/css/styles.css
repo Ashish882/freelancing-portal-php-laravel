@@ -18,12 +18,13 @@
         margin-top: 20%;
    }
 }
+
 .register .nav-tabs {
     margin-top: 3%;
     border: none;
     background: #0062cc;
     border-radius: 1.5rem;
-    width: 28%;
+    width: 19%;
     float: right;
 }
 @media (max-width: 991px) {
@@ -82,6 +83,7 @@
     background: #f8f9fa;
     border-top-left-radius: 10% 50%;
     border-bottom-left-radius: 10% 50%;
+    
 }
 
 .btnRegister {
@@ -93,8 +95,10 @@
     background: #0062cc;
     color: #fff;
     font-weight: 600;
-    width: 50%;
+    width: 40%;
     cursor: pointer;
+    margin-left: 400px;
+    margin-right: 80px;
 }
 .register-heading {
     text-align: center;
@@ -104,7 +108,7 @@
 }
 .form-group {
     margin-bottom:center;
-    margin-left: 250px;
+    margin-left: 280px;
     padding-left:1%;
     text-align: 14%;
     width: 50%;
@@ -131,7 +135,7 @@
   display: flex;
   max-width: calc(100% - 400px);
   margin: auto;
-  height: 90px;
+  height: 70px;
   align-items: center;
   justify-content: space-between;
 
@@ -380,3 +384,116 @@ nav .content .links{
   font-size: 45px;
   margin: 5px 0;
 }
+
+.col-md-9 register-right{
+
+ -webkit-box-flex: 0;
+  -ms-flex: 0 0 75%;
+  flex: 0 0 75%;
+  max-width: 75%;
+  margin-top: 45px;
+
+
+width:45px;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+  }
+  
+  body {
+  font-family: poppins;
+  margin: 0;
+  display: grid;
+  font-size: 14px;
+  }
+  header p {
+  padding: 50px;
+  text-align: center;
+  color: #bebebe;
+  text-transform: uppercase;
+  font-size: 65px;
+  font-weight: 700;
+  }
+  .footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 50px;
+  color: #fff;
+  background-color: darkblue;
+  }
+  
+  .footer > * {
+  flex:  1 100%;
+  }
+  
+  .l-footer {
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+  }
+  
+  h2 {
+  font-weight: 400;
+  font-size: 15px;
+  }
+  
+  .footer ul {
+  list-style: none;
+  padding-left: 0;
+  }
+  
+  .footer li {
+  line-height: 2em;
+  }
+  
+  .footer a {
+  text-decoration: none;
+  }
+  
+  .r-footer {
+  display: flex;
+  flex-flow: row wrap;
+  }
+  
+  .r-footer > * {
+  flex: 1 50%;
+  margin-right: 1.25em;
+  }
+  
+  .box a {
+  color: #999;
+  }
+  
+  .h-box {
+  column-count: 2;
+  column-gap: 1.25em;
+  }
+  
+  .b-footer {
+  text-align: center;
+  color: #999;
+  padding-top: 50px;
+  }
+  
+  .l-footer p {
+  padding-right: 20%;
+  color: #999;
+  }   
+  
+  @media screen and (min-width: 600px) {
+  .r-footer > * {
+  flex: 1;
+  }
+  
+  .features {
+  flex-grow: 2;
+  }
+  
+  .l-footer {
+  flex: 1 0px;
+  }
+  
+  .r-footer {
+  flex: 2 0px;
+  }
+  }
+  
