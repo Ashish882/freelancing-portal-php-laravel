@@ -88,7 +88,7 @@
 
 .btnRegister {
     float: right;
-    margin-top: 10%;
+    margin-top: 10px;
     border: none;
     border-radius: 1.5rem;
     padding: 2%;
@@ -97,14 +97,15 @@
     font-weight: 600;
     width: 40%;
     cursor: pointer;
-    margin-left: 400px;
-    margin-right: 80px;
+
+    margin-right: 97px;
 }
 .register-heading {
     text-align: center;
     margin-top: 8%;
     margin-bottom: -15%;
     color: #495057;
+    padding-left: 40px;
 }
 .form-group {
     margin-bottom:center;

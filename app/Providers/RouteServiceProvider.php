@@ -7,6 +7,7 @@ use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvi
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 class RouteServiceProvider extends ServiceProvider
 {
@@ -17,7 +18,25 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    public const HOME = '/dashboard';
+
+ 
+        //$role = Auth::user()->role; 
+        public static function redirectTo() {
+            $role = Auth::user()->login_type; 
+            switch ($role) {
+                case '1':
+                    return '/admin_dashboard';
+                    break;
+                case '2':
+                    return   '/freelancer_dashboard';
+                    break; 
+              
+                  default:
+                    return  '/dashboard'; 
+            }
+          }
+  
+  //  public const HOME = '/dashboard';
 
     /**
      * The controller namespace for the application.
