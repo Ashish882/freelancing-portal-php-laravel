@@ -14,16 +14,34 @@
                     <div class="row register-form">
                         <div class="col-md-12">
                            <div class="col-md-12">
+                           <div class="col-md-12 d-flex justify-content-center"  style="color:red;">
+                           @if ($errors->any())
+                <div >
+                    <div class="font-medium text-red-600">
+                        {{ __('Whoops! Something went wrong.') }}
+                    </div>
+
+                    <ul class="mt-3 list-disc list-inside text-sm text-red-600">
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+                @endif
+    </div>
+            
+
                          
-                         
+                           <form  method="POST" action="login">
+                               @csrf
                                 
                            <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Your Email *" value="" />
+                                <input name="email" type="email" class="form-control" placeholder="Your Email *" value="" />
                             </div>
                            
                             <div class="form-group">
                                 
-                            <input type="password" class="form-control" placeholder="Password *" value=""  />
+                            <input name="password" type="password" class="form-control" placeholder="Password *" value=""  />
                      
                                
 
