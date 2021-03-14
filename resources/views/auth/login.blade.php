@@ -18,7 +18,7 @@
     
     <div class="row">
         <div class="col-md-3 register-left">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIk0iGpJrAmjTpmPT7fWrsMLk-jkeHvwYycg&usqp=CAU" alt="" />
+            <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt="" />
             <h3>Welcome</h3>
             <p>Welcome to our Freelancing Page</p>
             
