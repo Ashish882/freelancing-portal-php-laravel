@@ -32,17 +32,34 @@ class RegisteredUserController extends Controller
      */
     public function store(Request $request)
     {
+
+        if($request->login_type == 'free' ){
+
+            $logintype = '3';
+        }
+        else if ($request->login_type == 'emp'){
+
+            $logintype = '2';
+        }
+
+        else{
+
+            die();
+        }
+
+        if($logintype){
         $request->validate([
             'name' => 'required|string|max:255',
-            'login_type'=>'required|string|max:10',
+            'login_type' => 'required|string|max:10',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|confirmed|min:8',
         ]);
 
+  
 
         Auth::login($user = User::create([
             'name' => $request->name,
-            'login_type' => $request->login_type,
+            'login_type' => $logintype,
             'email' => $request->email,
             'password' => Hash::make($request->password),
         ]));
@@ -50,6 +67,8 @@ class RegisteredUserController extends Controller
 
         event(new Registered($user));
 
-        return redirect(RouteServiceProvider::HOME);
+        return redirect(RouteServiceProvider:: redirectTo());
     }
+}
+
 }

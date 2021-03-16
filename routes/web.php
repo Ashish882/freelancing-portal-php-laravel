@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\admin\DashboardController as admin;
+use App\Http\Controllers\employee\DashboardController as employee;
+use App\Http\Controllers\freelancer\DashboardController as freelancer;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +24,9 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-Route::get('/admin_dashboard', 'Admin\DashboardController@index');
-Route::get('/seller_dashboard', 'freelancer\DashboardController@index');
+
+Route::get('admin_dashboard',[admin::class,'index']);
+Route::get('employee_dashboard',[employee::class,'index']);
+Route::get('freelancer_dashboard',[freelancer::class,'index']);
 
 require __DIR__.'/auth.php';

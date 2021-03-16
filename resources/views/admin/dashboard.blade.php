@@ -1,7 +1,7 @@
-@extends('header')
+@extends('common.header')
 
-section('content')
-<div class="container">
+
+<div class="container" style="padding-top:100px; padding-bottom:100px;">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -20,7 +20,7 @@ section('content')
         </div>
     </div>
 </div>
-@endsection
 
-@extends('footer')
+
+@extends('common.footer')
 

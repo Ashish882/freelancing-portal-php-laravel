@@ -20,7 +20,6 @@ class RouteServiceProvider extends ServiceProvider
      */
 
  
-        //$role = Auth::user()->role; 
         public static function redirectTo() {
             $role = Auth::user()->login_type; 
             switch ($role) {
@@ -28,6 +27,9 @@ class RouteServiceProvider extends ServiceProvider
                     return '/admin_dashboard';
                     break;
                 case '2':
+                    return   '/employee_dashboard';
+                    break; 
+                case '3':
                     return   '/freelancer_dashboard';
                     break; 
               
