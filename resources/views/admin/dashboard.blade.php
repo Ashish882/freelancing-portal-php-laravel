@@ -15,6 +15,13 @@
                     @endif
 
                     {{ __('Hello ADMINISTRATOR, You are logged in!') }}
+
+                    <form method="POST" action="logout">
+                          @csrf
+                            <a class="" onclick="event.preventDefault();
+                                                this.closest('form').submit();">Log out</a>
+                    </form>
+                    
                 </div>
             </div>
         </div>

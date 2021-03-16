@@ -19,7 +19,7 @@ class RouteServiceProvider extends ServiceProvider
      * @var string
      */
 
- 
+
         public static function redirectTo() {
             $role = Auth::user()->login_type; 
             switch ($role) {
@@ -34,7 +34,7 @@ class RouteServiceProvider extends ServiceProvider
                     break; 
               
                   default:
-                    return  '/dashboard'; 
+                    return  '/error'; 
             }
           }
   

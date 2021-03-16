@@ -29,4 +29,14 @@ Route::get('admin_dashboard',[admin::class,'index']);
 Route::get('employee_dashboard',[employee::class,'index']);
 Route::get('freelancer_dashboard',[freelancer::class,'index']);
 
+
+Route::get('admin_dashboard', [admin::class ,'index'])
+                ->middleware('role:1');
+
+Route::get('employee_dashboard', [employee::class ,'index'])
+                ->middleware('role:2');
+
+Route::get('freelancer_dashboard',[freelancer::class,'index'])
+                ->middleware('role:3');            
+
 require __DIR__.'/auth.php';
