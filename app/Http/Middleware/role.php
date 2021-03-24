@@ -23,7 +23,7 @@ class role
   
       $user = Auth::user();
       if($user->login_type == $role)
-        return $next($request);
+      return $next($request);
       return redirect('');
 
     }

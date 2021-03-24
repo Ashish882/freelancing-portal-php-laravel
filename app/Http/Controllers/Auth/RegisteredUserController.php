@@ -32,7 +32,6 @@ class RegisteredUserController extends Controller
      */
     public function store(Request $request)
     {
-
         if($request->login_type == 'free' ){
 
             $logintype = '3';
@@ -41,12 +40,10 @@ class RegisteredUserController extends Controller
 
             $logintype = '2';
         }
-
         else{
 
             die();
         }
-
         if($logintype){
         $request->validate([
             'name' => 'required|string|max:255',
@@ -54,9 +51,6 @@ class RegisteredUserController extends Controller
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|confirmed|min:8',
         ]);
-
-  
-
         Auth::login($user = User::create([
             'name' => $request->name,
             'login_type' => $logintype,
