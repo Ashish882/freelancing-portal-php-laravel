@@ -6,6 +6,7 @@ use App\Http\Controllers\employee\DashboardController as employee;
 use App\Http\Controllers\freelancer\DashboardController as freelancer;
 use App\Http\Controllers\employee\addprojectController as addproject;
 use App\Http\Controllers\employee\viewProjectController as viewproject;
+use App\Http\Controllers\projectsController;
 use App\Http\Controllers\session;
 
 /*
@@ -63,13 +64,16 @@ Route::post('employee_dashboard/edit/{id}',[viewproject::class,'editproject'])
 Route::post('employee_dashboard/delete/{id}',[viewproject::class,'deleteproject'])
                 ->middleware('role:2'); 
 
+Route::get('employee_dashboard/delete/{id}',[viewproject::class,'deleteproject'])
+                ->middleware('role:2'); 
+
 ///////////////////////////////    Employeee End   ////////////////////////////////////////////////////////////   
 
-
-Route::get('session/get', [session::class, 'getSessionData']);
-Route::get('session/set', [session::class, 'storeSessionData']);
-Route::get('session/remove', [session::class, 'deleteSessionData']);
-
+//////////////////////  /*Public preview project*//////////////////////////
+Route::get('projects',[projectsController::class,'index']);
+Route::get('view-project/{id}',[projectsController::class,'view_project']);
+Route::get('apply_project/{id}',[projectsController::class,'apply_project'])->middleware('role:3');
+Route::post('apply_project/{id}',[projectsController::class,'applyforproject'])->middleware('role:3');
 
 
 require __DIR__.'/auth.php';

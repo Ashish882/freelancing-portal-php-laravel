@@ -1,7 +1,7 @@
-@extends('header')
+@extends('common.header')
 
-@section('content')
-<div class="container">
+
+<div class="container" style="padding-top:100px; padding-bottom:100px;">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -14,7 +14,8 @@
                         </div>
                     @endif
 
-                    {{ __('Hello Freelancer, You are logged in!') }}
+                    {{ __('Hello freelancer, You are logged in!') }}
+                    <br><br>
 
                     <form method="POST" action="logout">
                           @csrf
@@ -27,7 +28,7 @@
         </div>
     </div>
 </div>
-@endsection
 
-@extends('footer')
+
+@extends('common.footer')
 

@@ -20,7 +20,7 @@ class viewProjectController extends Controller
 
         }
 
-        public function show($id) {
+   public function show($id) {
             $edit = DB::select('select * from projects where id = ?',[$id]);
             return view('employee/projectupdate',['update_project'=>$edit]);
     }

@@ -1,6 +1,4 @@
-@include('common.header')
 
-<div class="container" style="padding-top:100px; padding-bottom:100px;">
 @if ($errors->any())
     <div class="alert alert-danger">
         <ul>
@@ -35,8 +33,4 @@
 
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
-</div>
-</div>
 
-
-@include('common.footer')
