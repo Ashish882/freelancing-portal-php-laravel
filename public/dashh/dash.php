@@ -8,8 +8,10 @@
   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
+  </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="check.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
   <body>
@@ -30,178 +32,159 @@
    
 
 
-    <div class="regform">
-        <h1>
- POST JOB</h1>
-</div>
-<div class="main">
-    
-        <form method="POST">
-            <div id="name">
-                <h2 class="name">
-Project Name </h2>
-<input class="firstname" type="text" name="pname"><br>
-               
-            </div>
-<h2 class="name">
 
-    
-    
-            <h2 class="name" style="height:-1px">
-Project Category</h2>
-<h2 id="new">
-<select class="option" name="subject">
-                <option disabled="disabled" selected="selected">--Choose option--</option>
-                <option>Graphic Design</option>
-                <option>Full Stack Development</option>
-                <option>Language Localization</option>
-                <option>Transcription</option>
-                <option>Writing Tutoring</option>
-            </select>
-
+<div class="das">
    
-
- 
-            <h2 id="coustomer">
-Description</h2>
-
-   <h4 id="hello">
-   <textarea id="w3review" name="w3review" rows="4" cols="50" style="height:50px,width:px" >
-
-  </textarea>
-
-<h2 id="coustomer">
-What type of project do you have?</h2>
-<label class="radio">
-                <input class="radio-one" type="radio" checked="checked" name="rdiobtn">
-                <span class="checkmark"></span>
-                one time project
-            </label>
+    <form>
     
-            <label class="radio">
-                <input class="radio-two" type="radio" name="rdiobtn">
-                <span class="checkmark"></span>
-               on going project
-            </label>
+    <div class="form-check">
+    <p>What would you like to do?</p>
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios1">
+  Create a new job post
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+  <label class="form-check-label" for="exampleRadios2">
+  Edit an existing draft
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" >
+  <label class="form-check-label" for="exampleRadios3">
+  Reuse a previous job post
+  </label>
+</div>
+</form>
 
-            <label class="radio">
-                <input class="radio-two" type="radio" name="rdiobtn">
-                <span class="checkmark"></span>
-               complex project
-            </label>
-           
-           
+<div class="form-group">
+    <label for="exampleFormControlInput1">TITLE</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter name of your job project" style="width:500px">
+  </div>
+  <div class="form-group">
+  
+    <label for="exampleFormControlTextarea1">Description</label>
+    <p>A good description includes:
 
- <h3><h3 id="coustomer">
+   <ul><li>What the deliverable is</li>
+<li>Type of freelancer or agency you're looking for</li>
+<li>Anything unique about the project, team, or your company</li>
+</ul>
+  </p>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="width:500px"></textarea>
+  </div>
 
-   What would you like to do</h3>
-<label class="radio">
-                <input class="radio-one" type="radio" checked="checked" name="rdiobtn">
-                <span class="checkmark"></span>
-                short time  project
-            </label>
-    
-            <label class="radio"> 
-                <input class="radio-two" type="radio" name="rdiobtn">
-                <span class="checkmark"></span>
-               longer term project
-            </label>
+  <div class="form-group"><p>Additional project files (optional)</p>
+    <label for="exampleFormControlFile1"></label>
+    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+    <p>You may attach up to 5 files under 100 MB each
+    </p>
+  </div>
+  
 
-            <h4><h4 id="coustomer">
-
-            What level of experience should your freelancer have?</h4>
-               <label class="radio">
-                <input class="radio-one" type="radio" checked="checked" name="rdiobtn">
-                <span class="checkmark"></span>
-                Entry Level
-            </label>
-    
-            <label class="radio"> 
-                <input class="radio-two" type="radio" name="rdiobtn">
-                <span class="checkmark"></span>
-               Intermediate
-            </label>
-            <label class="radio"> 
-                <input class="radio-two" type="radio" name="rdiobtn">
-                <span class="checkmark"></span>
-              Expert
-            </label>
-
-
-<h5><h5 id="coustomer">
-
-How many people do you need for this job?</h5>
-               <label class="radio">
-                <input class="radio-one" type="radio" checked="checked" name="rdiobtn">
-                <span class="checkmark"></span>
-                Only One
-            </label>
-    
-            <label class="radio"> 
-                <input class="radio-two" type="radio" name="rdiobtn">
-                <span class="checkmark"></span>
-            More than one
-            </label>
-
-
-            <h6><h6 id="coustomer">
-
-            How long do you expect this project to last?</h6>
-               <label class="radio">
-                <input class="radio-one" type="radio" checked="checked" name="rdiobtn">
-                <span class="checkmark"></span>
-                More than 6 month
-            </label>
-    
-            <label class="radio"> 
-                <input class="radio-two" type="radio" name="rdiobtn">
-                <span class="checkmark"></span>
-           3 to 6 month
-            </label>
-            <label class="radio"> 
-                <input class="radio-two" type="radio" name="rdiobtn">
-                <span class="checkmark"></span>
-           1 to 3 month
-            </label><label class="radio"> 
-                <input class="radio-two" type="radio" name="rdiobtn">
-                <span class="checkmark"></span>
-        less than 1 month
-            </label>
-            
-            
-            
-            <h5><h5 id="coustomer">
-
-Do you have a time requirement for this project?</h5>
-               <label class="radio">
-                <input class="radio-one" type="radio" checked="checked" name="rdiobtn">
-                <span class="checkmark"></span>
-               More than 30/week
-            </label>
-    
-            <label class="radio"> 
-                <input class="radio-two" type="radio" name="rdiobtn">
-                <span class="checkmark"></span>
-           less than 20 per week
-            </label>
-
-            <label class="radio"> 
-                <input class="radio-two" type="radio" name="rdiobtn">
-                <span class="checkmark"></span>
-           I don't know yet
-            </label>
-
-            <button type="submit">POST JOB </button>
-    
-     
+  <div class="form-check">
+  <p>What type of project do you have?
+</p>
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios1">
+    One Time Project
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+  <label class="form-check-label" for="exampleRadios2">
+    Ongoing Project
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+  <label class="form-check-label" for="exampleRadios3">
+    Complex Project
+  </label>
+</div>
 
 
+<div class="form-check"><p>What level of experience should your freelancer have?
+</p>
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios1">
+    Entry Level
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+  <label class="form-check-label" for="exampleRadios2">
+   Intermediate
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" >
+  <label class="form-check-label" for="exampleRadios3">
+ Expert
+  </label>
+</div>
 
 
-            
+<div class="form-check"><p>
+Who can see your job?
+</p>
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios1">
+    Anyone
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+  <label class="form-check-label" for="exampleRadios2">
+   Only ©FREELANCER
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" >
+  <label class="form-check-label" for="exampleRadios3">
+    Invite Only
+  </label>
+</div>
+
+
+<div class="form-check"><p>How many people do you need for this job?
+</p>
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios1">
+   One freelancer
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+  <label class="form-check-label" for="exampleRadios2">
+   More Then One freelancer
+  </label>
+</div>
+
+  </label>
+</div>
+</div>
+
+<div class="est">
+  <p>
+        Enter your estimated budget
+</p>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text">$</span>
+  
+  </div>
+  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+</div>
+
+</div>
+
+<div class="but">
+           <input class="btn btn-primary" type="submit" value="Submit" style="padding-right: :500px">
+</div>
         </form>
 </div>
-
 
   
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
