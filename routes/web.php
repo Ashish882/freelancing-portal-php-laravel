@@ -67,9 +67,9 @@ Route::post('employee_dashboard/delete/{id}',[viewproject::class,'deleteproject'
 Route::get('employee_dashboard/delete/{id}',[viewproject::class,'deleteproject'])
                 ->middleware('role:2'); 
 
-///////////////////////////////    Employeee End   ////////////////////////////////////////////////////////////   
+///////////////////////////////////////   Employeee End     //////////////////////////////////////////////////////////////   
 
-//////////////////////  /*Public preview project*//////////////////////////
+///////////////////////*  Public preview project   *//////////////////////////
 Route::get('projects',[projectsController::class,'index']);
 Route::get('view-project/{id}',[projectsController::class,'view_project']);
 Route::get('apply_project/{id}',[projectsController::class,'apply_project'])->middleware('role:3');
