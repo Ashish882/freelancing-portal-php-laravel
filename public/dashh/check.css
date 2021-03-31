@@ -36,7 +36,7 @@ nav ul li a {
     font-size: 17px;
     padding: 7px 13px;
     border-radius: 3px;
-    text-transform: uppercase;
+    
 }
 a.active,
 a:hover {
@@ -100,6 +100,10 @@ a:hover {
     margin-top: 120px;
     margin-bottom: 120px;
     padding: center;
+    
+    border-radius: 20px 40px; 
+
+ 
 }
 
 .form-check {
@@ -108,12 +112,5 @@ a:hover {
     margin-top: 10px;
 }
 .input-group mb-3 {
-    width: 500px;
-}
-.but {
-    margin-left: 400px;
-}
-.est {
-    margin-left: 400px;
     width: 500px;
 }

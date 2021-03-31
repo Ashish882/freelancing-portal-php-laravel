@@ -121,7 +121,7 @@
 </div>
 </div>
 
-
+<div class="col-md-6" style="padding-top:50px;">
 <div class="form-check"><p>
 Who can see your job?
 </p>
@@ -142,7 +142,8 @@ Who can see your job?
     Invite Only
   </label>
 </div>
-
+</div>
+ <div class="col-md-6" style="padding-top:50px;">
 
 <div class="form-check"><p>How many people do you need for this job?
 </p>
@@ -157,9 +158,10 @@ Who can see your job?
    More Then One freelancer
   </label>
 </div>
+</div>
 
   </label>
-
+  <div class="col-md-4" style="padding-top:50px;">
   <div class="est">
   <p>
         Enter your estimated budget
@@ -169,13 +171,14 @@ Who can see your job?
     <span class="input-group-text">$</span>
   
   </div>
-  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" ">
 </div>
 
 </div>
 
 <div class="but">
-           <input class="btn btn-primary" type="submit" value="Submit" style="padding-right: :500px">
+           <input class="btn btn-primary" type="submit" value="Submit" >
+</div>
 </div>
         </form>
 
