@@ -34,7 +34,7 @@
 
 
 <section class="das">
-<div class="container"  style="background: #fff; padding:50px;">
+<div class="container"  style="background: #fff; padding:50px;border-radius:70px">
 <div class="row">
 <div class="col-md-6">
 
@@ -83,7 +83,7 @@
 
     <label style="padding-bottom:10px;" for="exampleFormControlTextarea1">Description</label><br>
   
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="width:500px"></textarea>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="width:500px;   resize: none;"></textarea>
   </div>
 
   <div class="form-group"><p>Additional project files (optional)</p>
