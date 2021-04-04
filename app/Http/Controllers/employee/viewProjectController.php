@@ -57,5 +57,13 @@ class viewProjectController extends Controller
 
     }
 
+   public function previewpropasal($pid){
+
+    $data = DB::table('apply_projects')->where('project_id', $pid)->get();
+    return view('employee/viewpropsosal',['proposal'=>$data]);
+
+  
+   }
+
 
 }

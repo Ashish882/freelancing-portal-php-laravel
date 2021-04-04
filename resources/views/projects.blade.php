@@ -1,17 +1,204 @@
-<!DOCTPE html>
-<html>
-<head>
-<title>All project list</title>
-</head>
-<body>
+@extends('common.header')
+<script src="https://use.fontawesome.com/9b8a1ac6f7.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script>
+
+$(document).ready(function(e){
+    $('.search-panel .dropdown-menu').find('a').click(function(e) {
+		e.preventDefault();
+		var param = $(this).attr("href").replace("#","");
+		var concept = $(this).text();
+		$('.search-panel span#search_concept').text(concept);
+		$('.input-group #search_param').val(param);
+	});
+});
+
+
+</script>
+
+<style>
+
+.view-projects{
+
+    padding-top:100px;
+    padding-bottom:100px
+
+}
+
+.card-pad {
+
+
+    padding-bottom:10px;
+}
+
+</style>
+
+
+<section class="view-projects">
+<div class="container">
+<div class="row">
+
+<div class="col-3" style="min-height:500px;
+background-color:#fff;">
+
+<p>Filter 1</p>
+
+
+<div class="card">
+	<article class="card-group-item">
+		<header class="card-header">
+			<h6 class="title">Brands </h6>
+		</header>
+		<div class="filter-content">
+			<div class="card-body">
+			<form>
+				<label class="form-check">
+				  <input class="form-check-input" type="checkbox" value="">
+				  <span class="form-check-label">
+				    Mersedes Benz
+				  </span>
+				</label> <!-- form-check.// -->
+				<label class="form-check">
+				  <input class="form-check-input" type="checkbox" value="">
+				  <span class="form-check-label">
+				    Nissan Altima
+				  </span>
+				</label>  <!-- form-check.// -->
+				<label class="form-check">
+				  <input class="form-check-input" type="checkbox" value="">
+				  <span class="form-check-label">
+				    Another Brand
+				  </span>
+				</label>  <!-- form-check.// -->
+			</form>
+
+			</div> <!-- card-body.// -->
+		</div>
+	</article> <!-- card-group-item.// -->
+	
+	<article class="card-group-item">
+		<header class="card-header">
+			<h6 class="title">Choose type </h6>
+		</header>
+		<div class="filter-content">
+			<div class="card-body">
+			<label class="form-check">
+			  <input class="form-check-input" type="radio" name="exampleRadio" value="">
+			  <span class="form-check-label">
+			    First hand items
+			  </span>
+			</label>
+			<label class="form-check">
+			  <input class="form-check-input" type="radio" name="exampleRadio" value="">
+			  <span class="form-check-label">
+			    Brand new items
+			  </span>
+			</label>
+			<label class="form-check">
+			  <input class="form-check-input" type="radio" name="exampleRadio" value="">
+			  <span class="form-check-label">
+			    Some other option
+			  </span>
+			</label>
+			</div> <!-- card-body.// -->
+		</div>
+	</article> <!-- card-group-item.// -->
+</div> <!-- card.// -->
+
+
+
+
+
+
+
+</div>
+
+<div class="col-9" style="min-height:500px;">
+
+<div class="card">
+  <div class="card-header">
+
+  <div class="input-group">
+                <div class="input-group-btn search-panel">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    	<span id="search_concept">Filter by</span> <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#contains">Contains</a></li>
+                      <li><a href="#its_equal">It's equal</a></li>
+                      <li><a href="#greather_than">Greather than ></a></li>
+                      <li><a href="#less_than">Less than < </a></li>
+                      <li class="divider"></li>
+                      <li><a href="#all">Anything</a></li>
+                    </ul>
+                </div>
+                <input type="hidden" name="search_param" value="all" id="search_param">         
+                <input type="text" class="form-control" name="x" placeholder="Search term...">
+                <span class="input-group-btn" >
+                    <button class="btn btn-default" style="height:40px;" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </span>
+            </div>
+</div>
+
+  </div>
+
+  
+
+  <div class="card-body" style="border:1px solid rgba(0,0,0,.125);" >
+  @foreach ($emp_project as $project)
+  <div class="card card-pad">
+  <div class="card-header">
+  {{ $project->pname}}
+
+  </div>
+  <div class="card-body ">
+ 
+    <p class="card-text"> {{ $project->dis }} <br><br>
+    <i class="fa fa-cogs" aria-hidden="true"></i>{{ $project->pcat }} <br>
+    <i class="fa fa-money" aria-hidden="true"></i> {{ $project->price  }}</p>
+ 
+  </div>
+</div>
+<br>
+
+@endforeach
+
+  </div>
+</div>
+
+
+
+
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+<!--
+
+
+
 <table>
 <tr>
 <td>Id</td>
-<td>>pname</td>
+<td>pname</td>
 <td>pcat</td>
 <td>desc</td>
 <td>price</td>
 </tr>
+
 @foreach ($emp_project as $project)
 <tr>
 <td>{{ $project->id }}</td>
@@ -23,6 +210,7 @@
 <td><a href = 'apply_project/{{ $project->id }}'>Apply</a></td>
 </tr>
 @endforeach
-</table>
-</body>
-</html>
+</table>-->
+
+
+@extends('common.footer')

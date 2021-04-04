@@ -67,6 +67,9 @@ Route::post('employee_dashboard/delete/{id}',[viewproject::class,'deleteproject'
 Route::get('employee_dashboard/delete/{id}',[viewproject::class,'deleteproject'])
                 ->middleware('role:2'); 
 
+Route::get('employee_dashboard/view_proposal/{id}',[viewproject::class,'previewpropasal'])
+                ->middleware('role:2'); 
+
 ///////////////////////////////////////   Employeee End     //////////////////////////////////////////////////////////////   
 
 ///////////////////////*  Public preview project   *//////////////////////////

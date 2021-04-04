@@ -7,7 +7,7 @@
 <table>
 <tr>
 <td>Id</td>
-<td>>pname</td>
+<td>pname</td>
 <td>pcat</td>
 <td>desc</td>
 <td>price</td>
