@@ -19,7 +19,7 @@ $(document).ready(function(e){
 <style>
 
 .view-projects{
-
+    font-family: 'Kiwi Maru', serif;
     padding-top:100px;
     padding-bottom:100px
 
@@ -27,9 +27,12 @@ $(document).ready(function(e){
 
 .card-pad {
 
-
+    font-family: 'Kiwi Maru', serif;
     padding-bottom:10px;
 }
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
 
 </style>
 
@@ -47,7 +50,7 @@ background-color:#fff;">
 <div class="card">
 	<article class="card-group-item">
 		<header class="card-header">
-			<h6 class="title">Brands </h6>
+			<h6 class="title">Project Type </h6>
 		</header>
 		<div class="filter-content">
 			<div class="card-body">
@@ -55,20 +58,15 @@ background-color:#fff;">
 				<label class="form-check">
 				  <input class="form-check-input" type="checkbox" value="">
 				  <span class="form-check-label">
-				    Mersedes Benz
+				  Fixed Projects
 				  </span>
 				</label> <!-- form-check.// -->
 				<label class="form-check">
 				  <input class="form-check-input" type="checkbox" value="">
 				  <span class="form-check-label">
-				    Nissan Altima
+				  Hourly Projects
 				  </span>
-				</label>  <!-- form-check.// -->
-				<label class="form-check">
-				  <input class="form-check-input" type="checkbox" value="">
-				  <span class="form-check-label">
-				    Another Brand
-				  </span>
+				
 				</label>  <!-- form-check.// -->
 			</form>
 
@@ -78,31 +76,65 @@ background-color:#fff;">
 	
 	<article class="card-group-item">
 		<header class="card-header">
-			<h6 class="title">Choose type </h6>
+			<h6 class="title">Listing Types </h6>
 		</header>
 		<div class="filter-content">
 			<div class="card-body">
 			<label class="form-check">
 			  <input class="form-check-input" type="radio" name="exampleRadio" value="">
 			  <span class="form-check-label">
-			    First hand items
+			  Recruiter
 			  </span>
 			</label>
 			<label class="form-check">
 			  <input class="form-check-input" type="radio" name="exampleRadio" value="">
 			  <span class="form-check-label">
-			    Brand new items
+			  Urgent
 			  </span>
 			</label>
 			<label class="form-check">
 			  <input class="form-check-input" type="radio" name="exampleRadio" value="">
 			  <span class="form-check-label">
-			    Some other option
+			  Fulltime
 			  </span>
 			</label>
 			</div> <!-- card-body.// -->
 		</div>
 	</article> <!-- card-group-item.// -->
+
+	<article>
+	<header class="card-header">
+			<h6 class="title">Set Price </h6>
+			
+			<!-- Section: Price version 2 -->
+    <section class="mb-4">
+
+ 
+      <div class="slider-price d-flex align-items-center my-4">
+        <span class="font-weight-normal small text-muted mr-2">$0</span>
+        <form class="multi-range-field w-100 mb-1">
+          <input id="multi" class="multi-range" type="range" />
+        </form>
+        <span class="font-weight-normal small text-muted ml-2">$100</span>
+      </div>
+
+    </section>
+
+<script>
+
+$('#multi').mdbRange({
+  single: {
+    active: true,
+    multi: {
+      active: true,
+      rangeLength: 1
+    },
+  }
+});
+</script>
+  
+ 
+	</article>
 </div> <!-- card.// -->
 
 
@@ -146,16 +178,18 @@ background-color:#fff;">
 
   <div class="card-body" style="border:1px solid rgba(0,0,0,.125);" >
   @foreach ($emp_project as $project)
-  <div class="card card-pad">
-  <div class="card-header">
+  <div class="card card-pad " >
+  <div class="card-header" style="font-weight: bold;">
   {{ $project->pname}}
 
   </div>
-  <div class="card-body ">
+  <div class="card-body  ">
  
-    <p class="card-text"> {{ $project->dis }} <br><br>
+    <p class="card-text"  > {{ $project->dis }} <br><br>
     <i class="fa fa-cogs" aria-hidden="true"></i>{{ $project->pcat }} <br>
     <i class="fa fa-money" aria-hidden="true"></i> {{ $project->price  }}</p>
+  <button type="button" class="btn btn-outline-primary">Open</button>
+
  
   </div>
 </div>
@@ -176,7 +210,7 @@ background-color:#fff;">
 
 
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
 </section>
