@@ -1,5 +1,5 @@
 @extends('common.header')
-<script src="https://use.fontawesome.com/9b8a1ac6f7.js"></script>
+
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <script>
 
@@ -16,6 +16,9 @@ $(document).ready(function(e){
 
 </script>
 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+
 <style>
 
 .view-projects{
@@ -31,8 +34,7 @@ $(document).ready(function(e){
     padding-bottom:10px;
 }
 
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+
 
 </style>
 
@@ -43,9 +45,6 @@ $(document).ready(function(e){
 
 <div class="col-3" style="min-height:500px;
 background-color:#fff;">
-
-<p>Filter 1</p>
-
 
 <div class="card">
 	<article class="card-group-item">
@@ -102,6 +101,33 @@ background-color:#fff;">
 		</div>
 	</article> <!-- card-group-item.// -->
 
+	<article class="card-group-item">
+		<header class="card-header">
+			<h6 class="title">Skills</h6>
+		</header>
+		<div class="filter-content">
+			<div class="card-body">
+			<form>
+				<label class="form-check">
+				  <input class="form-check-input" type="checkbox" value="">
+				  <span class="form-check-label">
+				  php
+				  </span>
+				</label> <!-- form-check.// -->
+				<label class="form-check">
+				  <input class="form-check-input" type="checkbox" value="">
+				  <span class="form-check-label">
+				  python
+				  </span>
+				
+				</label>  <!-- form-check.// -->
+			</form>
+
+			</div> <!-- card-body.// -->
+		</div>
+	</article> <!-- card-group-item.// -->
+	
+
 	<article>
 	<header class="card-header">
 			<h6 class="title">Set Price </h6>
@@ -135,6 +161,10 @@ $('#multi').mdbRange({
   
  
 	</article>
+
+
+
+	
 </div> <!-- card.// -->
 
 
