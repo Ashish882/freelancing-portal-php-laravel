@@ -78,5 +78,8 @@ Route::get('view-project/{id}',[projectsController::class,'view_project']);
 Route::get('apply_project/{id}',[projectsController::class,'apply_project'])->middleware('role:3');
 Route::post('apply_project/{id}',[projectsController::class,'applyforproject'])->middleware('role:3');
 
+////////////////////////////// * Free lancer *////////////////////////
+Route::get('view_application',[freelancer::class,'view_application'])->middleware('role:3');
+
 
 require __DIR__.'/auth.php';
