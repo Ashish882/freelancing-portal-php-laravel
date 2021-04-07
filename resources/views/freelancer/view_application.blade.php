@@ -11,7 +11,9 @@ Content body start
 <h6 class="text-black fs-16 font-w600 mb-1">Showing 246 Jobs Results</h6>
 <span class="fs-14">Based your preferences</span>
 </div>
-<div class="custom-control check-switch custom-checkbox mr-4 mb-2">
+<!--
+    
+    <div class="custom-control check-switch custom-checkbox mr-4 mb-2">
 <input type="checkbox" class="custom-control-input" id="customCheck9">
 <label class="custom-control-label" for="customCheck9">Fulltime</label>
 </div>
@@ -27,6 +29,8 @@ Content body start
 <input type="checkbox" class="custom-control-input" id="customSwitch12">
 <label class="custom-control-label" for="customSwitch12">Salary</label>
 </div>
+
+-->
 <div class="dropdown custom-dropdown mb-0 mr-4 mt-3 mt-sm-0 mb-2">
 <div class="btn border border-primary text-black btn-rounded" role="button" data-toggle="dropdown" aria-expanded="false">
     <svg class="mr-2 scale5" width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -68,12 +72,7 @@ Content body start
         <thead>
             <tr>
                 <th>
-                    <div class="checkbox mr-0 align-self-center">
-                        <div class="custom-control custom-checkbox ">
-                            <input type="checkbox" class="custom-control-input" id="checkAll" required="">
-                            <label class="custom-control-label" for="checkAll"></label>
-                        </div>
-                    </div>
+                    
                 </th>
                 <th>ID</th>
                 <th>Date Applied</th>
@@ -87,12 +86,7 @@ Content body start
 <tbody>
 <tr>
 <td>
-    <div class="checkbox mr-0 align-self-center">
-        <div class="custom-control custom-checkbox ">
-            <input type="checkbox" class="custom-control-input" id="check1" required="">
-            <label class="custom-control-label" for="check1"></label>
-        </div>
-    </div>
+   
 </td>
 <td>#APL-0001</td>
 <td>June 1, 2020, 08:22 AM</td>
@@ -139,12 +133,7 @@ Content body start
 </tr>
 <tr>
 <td>
-    <div class="checkbox mr-0 align-self-center">
-        <div class="custom-control custom-checkbox ">
-            <input type="checkbox" class="custom-control-input" id="check2" required="">
-            <label class="custom-control-label" for="check2"></label>
-        </div>
-    </div>
+    
 </td>
 <td>#APL-0002</td>
 <td>June 1, 2020, 08:22 AM</td>
@@ -190,12 +179,7 @@ Content body start
 </tr>
 <tr>
 <td>
-    <div class="checkbox mr-0 align-self-center">
-        <div class="custom-control custom-checkbox ">
-            <input type="checkbox" class="custom-control-input" id="check3" required="">
-            <label class="custom-control-label" for="check3"></label>
-        </div>
-    </div>
+    
 </td>
 <td>#APL-0003</td>
 <td>June 1, 2020, 08:22 AM</td>
@@ -242,12 +226,7 @@ Content body start
 </tr>
 <tr>
 <td>
-    <div class="checkbox mr-0 align-self-center">
-        <div class="custom-control custom-checkbox ">
-            <input type="checkbox" class="custom-control-input" id="check4" required="">
-            <label class="custom-control-label" for="check4"></label>
-        </div>
-    </div>
+    
 </td>
 <td>#APL-0004</td>
 <td>June 1, 2020, 08:22 AM</td>
@@ -293,12 +272,7 @@ Content body start
 </tr>
 <tr>
 <td>
-<div class="checkbox mr-0 align-self-center">
-    <div class="custom-control custom-checkbox ">
-        <input type="checkbox" class="custom-control-input" id="check6" required="">
-        <label class="custom-control-label" for="check6"></label>
-    </div>
-</div>
+<
 </td>
 <td>#APL-0005</td>
 <td>June 1, 2020, 08:22 AM</td>
@@ -345,12 +319,7 @@ Content body start
 </tr>
 <tr>
                 <td>
-                    <div class="checkbox mr-0 align-self-center">
-                        <div class="custom-control custom-checkbox ">
-                            <input type="checkbox" class="custom-control-input" id="check7" required="">
-                            <label class="custom-control-label" for="check7"></label>
-                        </div>
-                    </div>
+                    
                 </td>
                 <td>#APL-0006</td>
                 <td>June 1, 2020, 08:22 AM</td>
