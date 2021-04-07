@@ -9,9 +9,9 @@
     <!-- row -->
     <div class="container-fluid">
         <div class="row">
-            <div class="col-xl-9 col-xxl-8">	
+            <div class="col-xl-12 col-xxl-12">	
                 <div class="row">
-                    <div class="col-xl-4 col-xxl-6 col-lg-4 col-sm-6">
+                    <div class="col-xl-6 col-xxl-6 col-lg-6 col-sm-6">
                         <div class="card border-card">
                             <div class="card-body">
                                 <div class="media">
@@ -31,7 +31,7 @@
                             <span class="line bg-success"></span>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-xxl-6 col-lg-4 col-sm-6">
+                    <div class="col-xl-6 col-xxl-6 col-lg-6 col-sm-6">
                         <div class="card border-card">
                             <div class="card-body">
                                 <div class="media">
@@ -54,90 +54,21 @@
            
                 </div>
             </div>
+            <!--
             <div class="col-xl-3 col-xxl-4">
                 <div class="row">
-                    <div class="col-xl-12">
-                        <div class="card d-flex flex-xl-column flex-sm-column flex-md-row flex-column">
-                            <div class="card-body text-center border-bottom profile-bx">
-                                <div class="profile-image mb-4">
-                                    <img src="xhtml/images/avatar/1.jpg" class="rounded-circle" alt="">
-                                </div>
-                                <h4 class="fs-22 text-black mb-1">{{ Auth::user()->name }}</h4>
-                                <p class="mb-4">Web developer</p>
-                                <div class="row">
-                                    <div class="col-4 p-0">
-                                        <div class="d-inline-block mb-2 relative donut-chart-sale">
-                                            <span class="donut" data-peity='{ "fill": ["rgb(255, 224, 194)", "rgba(236, 236, 236, 0)"],   "innerRadius": 24, "radius": 10}'>7/9</span>
-                                            <small class="text-white">66%</small>
-                                            <span class="circle bg-warning"></span>
-                                        </div>
-                                        <span class="d-block">Research</span>
-                                    </div>
-                                    <div class="col-4 p-0">
-                                        <div class="d-inline-block mb-2 relative donut-chart-sale">
-                                            <span class="donut" data-peity='{ "fill": ["rgb(130, 255, 165)", "rgba(236, 236, 236, 0)"],   "innerRadius": 24, "radius": 10}'>4/9</span>
-                                            <small class="text-white">31%</small>
-                                            <span class="circle bg-success"></span>
-                                        </div>
-                                        <span class="d-block">Figma</span>
-                                    </div>
-                                    <div class="col-4 p-0">
-                                        <div class="d-inline-block mb-2 relative donut-chart-sale">
-                                            <span class="donut" data-peity='{ "fill": ["rgb(133, 211, 255)", "rgba(236, 236, 236, 0)"],   "innerRadius": 24, "radius": 10}'>2/9</span>
-                                            <small class="text-white">7%</small>
-                                            <span class="circle bg-secondary"></span>
-                                        </div>
-                                        <span class="d-block">Photoshop</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body col-xl-12 col-md-6 col-sm-12 pb-0">
-                                <h4 class="fs-18 text-black mb-3">Recent Activities</h4>
-                                <div class="media mb-4">
-                                    <span class="p-3 bgl-primary mr-3 rounded">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip1)">
-                                            <path d="M20.3955 10.8038C19.9733 10.8038 19.5767 10.8742 19.2057 11.0213V4.79104H12.9883C13.1226 4.42004 13.193 4.01066 13.193 3.58849C13.193 1.60554 11.5874 0 9.60447 0C7.62152 0 6.01598 1.60554 6.01598 3.58849C6.01598 4.01066 6.08634 4.41365 6.22067 4.79104H0.00958252V11.7441C0.642845 11.1684 1.48719 10.8102 2.4083 10.8102C4.39125 10.8102 5.99679 12.4158 5.99679 14.3987C5.99679 16.3817 4.39125 17.9872 2.4083 17.9872C1.48719 17.9872 0.642845 17.629 0.00958252 17.0533V24H19.2121V17.7697C19.5831 17.9104 19.9797 17.9872 20.4019 17.9872C22.3912 17.9872 23.9904 16.3817 23.9904 14.3987C23.9904 12.4158 22.3912 10.8038 20.3955 10.8038Z" fill="#8743DF"/>
-                                            </g>
-                                            <defs>
-                                            <clipPath id="clip1">
-                                            <rect width="24" height="24" fill="white"/>
-                                            </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </span>
-                                    <div class="media-body">
-                                        <p class="fs-14 mb-1 text-black font-w500">Your application has accepted in <strong>3 Vacancy</strong></p>
-                                        <span class="fs-14">12h ago</span>
-                                    </div>
-                                </div>
-                                <div class="media mb-4">
-                                    <span class="p-3 bgl-primary mr-3 rounded">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip2)">
-                                            <path d="M20.3955 10.8038C19.9733 10.8038 19.5767 10.8742 19.2057 11.0213V4.79104H12.9883C13.1226 4.42004 13.193 4.01066 13.193 3.58849C13.193 1.60554 11.5874 0 9.60447 0C7.62152 0 6.01598 1.60554 6.01598 3.58849C6.01598 4.01066 6.08634 4.41365 6.22067 4.79104H0.00958252V11.7441C0.642845 11.1684 1.48719 10.8102 2.4083 10.8102C4.39125 10.8102 5.99679 12.4158 5.99679 14.3987C5.99679 16.3817 4.39125 17.9872 2.4083 17.9872C1.48719 17.9872 0.642845 17.629 0.00958252 17.0533V24H19.2121V17.7697C19.5831 17.9104 19.9797 17.9872 20.4019 17.9872C22.3912 17.9872 23.9904 16.3817 23.9904 14.3987C23.9904 12.4158 22.3912 10.8038 20.3955 10.8038Z" fill="#8743DF"/>
-                                            </g>
-                                            <defs>
-                                            <clipPath id="clip2">
-                                            <rect width="24" height="24" fill="white"/>
-                                            </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </span>
-                                    <div class="media-body">
-                                        <p class="fs-14 mb-1 text-black font-w500">Your application has accepted in <strong>3 Vacancy</strong></p>
-                                        <span class="fs-14">12h ago</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  
+
+
+
+
+
                 </div>
-            </div>
+            </div>-->
             <div class="col-xl-12">
                 <div class="d-sm-flex align-items-center mb-sm-3 mt-sm-2 mt-2  mb-2">
                     <h4 class="fs-20 text-black mr-auto mb-sm-0 mb-2">Recomended Projects</h4>
-                    <a href="companies.html" class="btn btn-outline-primary rounded mb-sm-0 mb-1">View More</a>
+                    <a href="project" class="btn btn-outline-primary rounded mb-sm-0 mb-1">View More</a>
                 </div>
                 <div class="testimonial-one owl-carousel">
                     <div class="items">

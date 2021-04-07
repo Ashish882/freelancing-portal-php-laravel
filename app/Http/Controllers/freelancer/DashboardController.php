@@ -23,4 +23,9 @@ class DashboardController extends Controller
         $data = DB::select('select * from apply_projects where free_id = ?',[$id]);
         return view('freelancer.view_application' ,['application'=>$data] );
       }
+
+      public function view_projects() {
+        $project = DB::select("select * from projects");
+        return view('freelancer.project',['emp_project'=>$project]);
+      }
 }
