@@ -43,9 +43,9 @@ Route::get('employee_dashboard', [employee::class ,'index'])
 Route::get('freelancer_dashboard',[freelancer::class,'index'])
                 ->middleware('role:3');       
 ////////////////////////////////  Employeee  ////////////////////////////////////////////////////////////
-Route::get('employee_dashboard/addproject',[addproject::class,'create'])
+Route::get('addproject',[addproject::class,'create'])
                 ->middleware('role:2');
-Route::post('employee_dashboard/addproject', [addproject::class, 'addproject'])
+Route::post('addproject', [addproject::class, 'addproject'])
                 ->middleware('role:2');
 
                      /*View project*/
@@ -81,6 +81,7 @@ Route::post('apply_project/{id}',[projectsController::class,'applyforproject'])-
 ////////////////////////////// * Free lancer *////////////////////////
 Route::get('view_application',[freelancer::class,'view_application'])->middleware('role:3');
 Route::get('project',[freelancer::class,'view_projects'])->middleware('role:3');
+Route::get('profile',[freelancer::class,'view_profile'])->middleware('role:3');
 
 
 require __DIR__.'/auth.php';

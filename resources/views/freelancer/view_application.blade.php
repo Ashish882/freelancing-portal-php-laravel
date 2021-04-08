@@ -8,7 +8,7 @@ Content body start
 <div class="container-fluid">
 <div class="d-flex flex-wrap mb-4 align-items-center search-filter">
 <div class="mr-auto mb-2 pr-2">
-<h6 class="text-black fs-16 font-w600 mb-1">Showing 246 Jobs Results</h6>
+<h6 class="text-black fs-16 font-w600 mb-1">Showing 10 Jobs Results</h6>
 <span class="fs-14">Based your preferences</span>
 </div>
 <!--
@@ -61,44 +61,42 @@ Content body start
                 </th>
                 <th>ID</th>
                 <th>Date Applied</th>
-                <th>Company </th>
+                <th>Project name</th>
                 <th>Type</th>
-              
                 <th>Contact</th>
                 <th>Status</th>
             </tr>
         </thead>
 <tbody>
+
+@foreach ($application as $project)
+
 <tr>
 <td>
    
 </td>
-<td>#APL-0001</td>
-<td>June 1, 2020, 08:22 AM</td>
+<td>#1</td>
+<td>{{ $project->created_at }} </td>
 <td>
     <div class="media">
-        <svg class="mr-3" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 7.27273C0 3.25611 3.25611 0 7.27273 0H42.7273C46.7439 0 50 3.25611 50 7.27273V42.7273C50 46.7439 46.7439 50 42.7273 50H7.27273C3.25611 50 0 46.7439 0 42.7273V7.27273Z" fill="#D3D3D3"/>
-            <path d="M0 7.27273C0 3.25611 3.25611 0 7.27273 0H42.7273C46.7439 0 50 3.25611 50 7.27273V42.7273C50 46.7439 46.7439 50 42.7273 50H7.27273C3.25611 50 0 46.7439 0 42.7273V7.27273Z" fill="#40C7CF"/>
-            <path d="M12.8885 12.8887C14.4638 11.3134 16.3339 10.0638 18.3921 9.21129C20.4503 8.35875 22.6563 7.91996 24.884 7.91996C27.1118 7.91996 29.3178 8.35875 31.376 9.21129C33.4342 10.0638 35.3043 11.3134 36.8796 12.8887C38.4549 14.464 39.7045 16.3341 40.557 18.3923C41.4095 20.4505 41.8483 22.6565 41.8483 24.8842C41.8483 27.112 41.4095 29.318 40.557 31.3762C39.7045 33.4344 38.4549 35.3045 36.8796 36.8798L30.8818 30.882C31.6695 30.0944 32.2942 29.1593 32.7205 28.1302C33.1468 27.1011 33.3662 25.9981 33.3662 24.8842C33.3662 23.7704 33.1468 22.6674 32.7205 21.6383C32.2942 20.6092 31.6695 19.6741 30.8818 18.8865C30.0942 18.0988 29.1591 17.474 28.13 17.0478C27.1009 16.6215 25.9979 16.4021 24.884 16.4021C23.7701 16.4021 22.6672 16.6215 21.6381 17.0478C20.609 17.474 19.6739 18.0988 18.8863 18.8865L12.8885 12.8887Z" fill="#8FD7FF"/>
-            <path d="M12.8885 36.8798C9.70705 33.6984 7.91975 29.3835 7.91975 24.8843C7.91975 20.385 9.70705 16.0701 12.8885 12.8887C16.0699 9.70727 20.3848 7.91997 24.884 7.91996C29.3832 7.91996 33.6982 9.70726 36.8796 12.8887L30.8818 18.8865C29.2911 17.2958 27.1336 16.4021 24.884 16.4021C22.6344 16.4021 20.477 17.2958 18.8863 18.8865C17.2955 20.4772 16.4019 22.6346 16.4019 24.8843C16.4019 27.1339 17.2955 29.2913 18.8863 30.882L12.8885 36.8798Z" fill="white"/>
-        </svg>
+   
         <div class="media-body text-nowrap">
-            <h6 class="text-black font-w600 fs-16 mb-0">Highspeed Studios</h6>
-            <span class="fs-14">Creative Design Agency</span>
+            <h6 class="text-black font-w600 fs-16 mb-0">{{ $project->pname }} </h6>
+            <span class="fs-14">{{ $project->pcat }} </span>
+      
         </div>
     </div>
 </td>
-<td>FULLTIME</td>
+<td>Fixed project</td>
 
 <td>
     <div class="d-flex">
-        <a class="contact-icon   href="#"><i class="las la-envelope" style="margin-top:10px;" ></i></a>
+        <a class="contact-icon"   href="#"><i class="las la-envelope" style="margin-top:10px;" ></i></a>
     </div>
 </td>
 <td>
     <div class="d-flex align-items-center">
-        <a class="btn rounded btn-success mr-3 ml-auto" href="#">Candidate</a>
+        <a class="btn rounded btn-success mr-3 ml-auto" href="#">Hired</a>
         <div class="dropdown float-right custom-dropdown mb-0">
             <div class="" data-toggle="dropdown">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -115,6 +113,12 @@ Content body start
     </div>
 </td>
 </tr>
+
+@endforeach
+
+
+
+<!--
 <tr>
 <td>
     
@@ -346,7 +350,7 @@ Content body start
                         </div>
                     </div>
                 </td>
-            </tr>
+            </tr>-->
         </tbody>
     </table>
 </div>

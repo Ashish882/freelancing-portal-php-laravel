@@ -19,10 +19,21 @@ class DashboardController extends Controller
       }
 
       public function view_application() {
+
         $id = Auth::id();
-        $data = DB::select('select * from apply_projects where free_id = ?',[$id]);
+        $data = DB::select('select * from apply_projects,projects where projects.id = apply_projects.project_id AND apply_projects.free_id = ?',[$id]);
         return view('freelancer.view_application' ,['application'=>$data] );
+
       }
+
+      public function view_profile() {
+
+
+        return view('freelancer.profile');
+
+      }
+
+      
       public static function check_if_already_apply($id){
         $free_id = Auth::id();
 
