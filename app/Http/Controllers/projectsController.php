@@ -37,7 +37,7 @@ class projectsController extends Controller
 
         $project = DB::select('select * from projects where id = ?',[$id]);
           
-        return view('apply');
+        return view('freelancer.apply');
 
         }
 
