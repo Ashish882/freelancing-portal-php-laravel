@@ -141,7 +141,7 @@
 </div>
 </div>
 
-
+<div class="col-md-6" style="padding-top:50px;">
 <div class="form-check"><p>
 Who can see your job?
 </p>
@@ -164,7 +164,7 @@ Who can see your job?
 </div>
 
 
-<div class="form-check"><p>How many people do you need for this job?
+<div class="form-check" style="margin-top:50px;"><p>How many people do you need for this job?
 </p>
   <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" >
   <label class="form-check-label" for="exampleRadios1">
@@ -180,7 +180,7 @@ Who can see your job?
 
   </label>
 
-  <div class="est">
+  <div class="est" style="margin-top:50px;" >
   <p>
         Enter your estimated budget
 </p>
@@ -205,7 +205,7 @@ Who can see your job?
 				
 						</div>
 					</div>
-		
+		</div>
 					
 	
 				</div>
