@@ -15,7 +15,7 @@
 
     <label style="padding-bottom:10px;" for="exampleFormControlTextarea1">Cover Letter</label><br>
   
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="width:500px"></textarea>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="width:500px;resize: none";></textarea>
   </div>
 
   <div class="form-group"><p>Add your resume  (optional)</p>
@@ -40,7 +40,7 @@
 
 
 <div class="but">
-           <input class="btn btn-primary" type="submit" value="Submit" style="margin-left:100px;">
+           <input class="btn btn-primary" type="submit" value="Submit" style="margin-left:250px;">
 </div>
 
 </div>
