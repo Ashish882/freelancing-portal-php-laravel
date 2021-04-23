@@ -7,9 +7,22 @@
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS96qJPx-TucFWrrAux4IlepfxxHehmGSrDmQ&usqp=CAU" alt="" />
             <h3>Welcome</h3>
             <p>You are few steps away from earning your own money!</p>
-            <input type="submit" name="" value=" Click To Login" /><br />
+            <a style="  
+            text-decoration: blink;  
+    border: none;
+    border-radius: 1.5rem;
+    padding: 13px;
+    width: 60%;
+    background: #f8f9fa;
+    font-weight: bold;
+    color: #383d41;
+    margin-top: 30%;
+    margin-bottom: 3%;
+    cursor: pointer;" href="login">Click here to login</a>
         </div>
         <div class="col-md-9 register-right" >
+
+    <div class="col-6" style="padding-top:40px;      left: 280px;">
         @if ($errors->any())
     <div class="alert alert-danger">
         <ul>
@@ -18,7 +31,8 @@
             @endforeach
         </ul>
     </div>
-@endif
+    @endif
+    </div>
             <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist"  >
                 <li class="nav-item" >
                     <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Hirer</a>

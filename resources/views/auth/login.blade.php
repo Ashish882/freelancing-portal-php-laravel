@@ -5,6 +5,19 @@
             <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt="" />
             <h3>Welcome</h3>
             <p>Welcome to our Freelancing Page</p>
+
+            <a style="  
+            text-decoration: blink;  
+    border: none;
+    border-radius: 1.5rem;
+    padding: 13px;
+    width: 60%;
+    background: #f8f9fa;
+    font-weight: bold;
+    color: #383d41;
+    margin-top: 30%;
+    margin-bottom: 3%;
+    cursor: pointer;" href="register">Click here to register</a>
             
         </div>
         <div class="col-md-9 register-right">

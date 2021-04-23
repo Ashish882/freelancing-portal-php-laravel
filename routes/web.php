@@ -21,7 +21,7 @@ use App\Http\Controllers\session;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return redirect('/login');
 });
 
 Route::get('/dashboard', function () {
