@@ -183,7 +183,7 @@ Main wrapper start
                                 <span class="ml-2">Profile </span>
                             </a>
                     
-                            <a href="email-inbox.html" class="dropdown-item ai-icon">
+                            <a href="addproject" class="dropdown-item ai-icon">
                                 <svg id="icon-inbox" xmlns="http://www.w3.org/2000/svg" class="text-success" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                                 <span class="ml-2">Add Project </span>
                             </a>
@@ -222,14 +222,14 @@ Main wrapper start
                 </a>
             </li>
 
-            <li><a class="ai-icon" href="project">
+            <li><a class="ai-icon" href="viewproject">
                     <i class="flaticon-381-heart"></i>
                     <span class="nav-text">My Projects</span>
                 </a>
             
             </li>
 
-            <li><a class="ai-icon" href="settings" >
+            <li><a class="ai-icon" href="addproject" >
                     <i class="flaticon-381-layer-1"></i>
                     <span class="nav-text">Add Projects</span>
                 </a>

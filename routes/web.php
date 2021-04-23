@@ -50,8 +50,9 @@ Route::post('addproject', [addproject::class, 'addproject'])
 
                      /*View project*/
 
-Route::get('employee_dashboard/viewproject',[viewproject::class,'index'])
+Route::get('viewproject',[viewproject::class,'index'])
                 ->middleware('role:2');
+                
 
 
                          /*Edit project*/
