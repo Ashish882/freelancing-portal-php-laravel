@@ -35,43 +35,10 @@
 <div class="content-body">
 	<!-- row -->
 	<div class="container-fluid">
-		<div class="d-flex align-items-center flex-wrap search-job bg-white rounded py-3 px-md-3 px-0 mb-4">
 		
-			<div class="col-lg-12 d-md-flex">
-				<input class="form-control input-rounded mr-auto mb-md-0 mb-3" type="text" placeholder="Search by Title, Company or any jobs keyword...">
-				<a href="javascript:void(0);" class="btn rounded btn-danger light mr-3">
-				<svg class="mr-3" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M1 4H12C12 4.53043 12.2107 5.03914 12.5858 5.41421C12.9609 5.78929 13.4696 6 14 6H16C16.5304 6 17.0391 5.78929 17.4142 5.41421C17.7893 5.03914 18 4.53043 18 4H19C19.2652 4 19.5196 3.89464 19.7071 3.70711C19.8946 3.51957 20 3.26522 20 3C20 2.73478 19.8946 2.48043 19.7071 2.29289C19.5196 2.10536 19.2652 2 19 2H18C18 1.46957 17.7893 0.960859 17.4142 0.585786C17.0391 0.210714 16.5304 0 16 0H14C13.4696 0 12.9609 0.210714 12.5858 0.585786C12.2107 0.960859 12 1.46957 12 2H1C0.734784 2 0.48043 2.10536 0.292893 2.29289C0.105357 2.48043 0 2.73478 0 3C0 3.26522 0.105357 3.51957 0.292893 3.70711C0.48043 3.89464 0.734784 4 1 4ZM14 2H16V3V4H14V2ZM19 9H10C10 8.46957 9.78929 7.96086 9.41421 7.58579C9.03914 7.21071 8.53043 7 8 7H6C5.46957 7 4.96086 7.21071 4.58579 7.58579C4.21071 7.96086 4 8.46957 4 9H1C0.734784 9 0.48043 9.10536 0.292893 9.29289C0.105357 9.48043 0 9.73478 0 10C0 10.2652 0.105357 10.5196 0.292893 10.7071C0.48043 10.8946 0.734784 11 1 11H4C4 11.5304 4.21071 12.0391 4.58579 12.4142C4.96086 12.7893 5.46957 13 6 13H8C8.53043 13 9.03914 12.7893 9.41421 12.4142C9.78929 12.0391 10 11.5304 10 11H19C19.2652 11 19.5196 10.8946 19.7071 10.7071C19.8946 10.5196 20 10.2652 20 10C20 9.73478 19.8946 9.48043 19.7071 9.29289C19.5196 9.10536 19.2652 9 19 9ZM6 11V9H8V10V11H6ZM19 16H16C16 15.4696 15.7893 14.9609 15.4142 14.5858C15.0391 14.2107 14.5304 14 14 14H12C11.4696 14 10.9609 14.2107 10.5858 14.5858C10.2107 14.9609 10 15.4696 10 16H1C0.734784 16 0.48043 16.1054 0.292893 16.2929C0.105357 16.4804 0 16.7348 0 17C0 17.2652 0.105357 17.5196 0.292893 17.7071C0.48043 17.8946 0.734784 18 1 18H10C10 18.5304 10.2107 19.0391 10.5858 19.4142C10.9609 19.7893 11.4696 20 12 20H14C14.5304 20 15.0391 19.7893 15.4142 19.4142C15.7893 19.0391 16 18.5304 16 18H19C19.2652 18 19.5196 17.8946 19.7071 17.7071C19.8946 17.5196 20 17.2652 20 17C20 16.7348 19.8946 16.4804 19.7071 16.2929C19.5196 16.1054 19.2652 16 19 16ZM12 18V16H14V17V18H12Z" fill="#F94687"/>
-				</svg>
-				FILTER</a>
-				<a href="javascript:void(0);" class="btn btn-primary rounded"><i class="las la-search scale5 mr-3"></i>FIND</a>
-			</div>
-		</div>
+			
 
-		<div class="d-flex flex-wrap mb-4 align-items-center search-filter">
-			<div class="mr-auto mb-2 pr-2">
-				<h6 class="text-black fs-16 font-w600 mb-1">Showing 10 project Results</h6>
-				<span class="fs-14">Based your preferences</span>
-			</div>
-			<div class="custom-control check-switch custom-checkbox mr-3 mb-2">
-				<input type="checkbox" class="custom-control-input" id="customCheck9">
-				<label class="custom-control-label" for="customCheck9">Fixed</label>
-			</div>
-			<div class="custom-control check-switch custom-checkbox mr-4 mb-2">
-				<input type="checkbox" class="custom-control-input" id="customCheck1">
-				<label class="custom-control-label" for="customCheck1">Hourly</label>
-			</div>
-			<div class="custom-control custom-switch toggle-switch text-right mr-3 mb-2">
-				<input type="checkbox" class="custom-control-input" id="customSwitch11">
-				<label class="custom-control-label" for="customSwitch11">Details</label>
-			</div>
-			<div class="custom-control custom-switch toggle-switch text-right mr-4 mb-2">
-				<input type="checkbox" class="custom-control-input" id="customSwitch12">
-				<label class="custom-control-label" for="customSwitch12">Verified</label>
-			</div>
-		
-
-		</div>
+	
 		<div class="row">
 			<div class="col-lg-12">
 			<!--@foreach ($emp_project as $project)
@@ -129,10 +96,14 @@
                 <div class="d-flex flex-wrap search-row bg-white py-3 mb-3 rounded justify-content-between align-items-center">
 					<div class="d-flex col-lg-12 col-sm-6 align-items-center">
 						<div>
-							<h2 class="title"><a href="profile.html" class="text-black"> test </a></h2>
-							<span class="text-primary">test</span>
-							<p class="pt-4">
-                            test
+							<h2 class="title"><a href="profile.html" class="text-black" style="font-size:30px;"> Project Name </a></h2>
+							<span class="text-primary" style="font-size:25px;"><br>Ceo Optimiser</span>
+							<h2>
+                            <br>
+                            Description 
+                            </h2>
+                            <p class="pt-4"style="font-size:25px;">
+                            We're looking for a tried-and-tested SEO whizz — someone who can extract actionable insights from our clients' web page and blog post analytics, to help us write higher performing content.
 
 							</p>
 						</div>
@@ -159,13 +130,25 @@
 						</div>
 					</div>
 					
-					<div class="col-xxl-3 text-xl-right text-lg-left text-sm-right col-lg-12 col-sm-6 mt-xl-0 mt-3">
-						<a href="apply_project/ " class="btn btn-sm btn-outline-primary rounded mr-2">Apply Now</a>
 					
-					</div>
 				</div>
 
         
+
+                <div class="d-flex col-xl-3 col-lg-4 col-sm-6 mt-lg-0 mt-3 align-items-center">
+								<svg class="mr-3" width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="">
+									<rect width="54" height="54" rx="15" fill="#FBA556"></rect>
+									<path d="M27.9998 10.4995V6.9998C27.9998 5.07515 26.4243 3.49963 24.5001 3.49963H17.4998C15.5756 3.49963 14.0001 5.07515 14.0001 6.9998V10.4995H10.5V38.4998H31.5V10.4995H27.9998ZM24.5001 10.4995H17.4998V6.99929H24.5001V10.4995Z" fill="white"></path>
+								</svg>
+								<div>
+									<h4 class="sub-title text-black">Number Of Appliciant</h4>
+									<span>12</span>
+								</div>
+							</div>
+
+
+
+
 
 
 

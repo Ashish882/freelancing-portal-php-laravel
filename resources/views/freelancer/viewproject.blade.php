@@ -9,7 +9,11 @@
 	<section class="das">
 <div class="container"  style="background: #fff; padding:50px;">
 <div class="row">
+<<<<<<< HEAD
 <div class="col-md-8">
+=======
+<div class="col-md-10">
+>>>>>>> 44e0238173a6808d1cee2e2882f1366ef35e4508
 
 <div class="form-group" style="font-size:25px";>
    <p><h2 style="font-size: 30px;
@@ -89,7 +93,12 @@ Hourly
   </label>
   
         </form>
+<<<<<<< HEAD
        
+=======
+        <div class="col-md-4">
+<div>
+>>>>>>> 44e0238173a6808d1cee2e2882f1366ef35e4508
 
 
 
@@ -99,6 +108,7 @@ Hourly
 
         </div><!-- end of row-->   
         
+<<<<<<< HEAD
         <div class="col-md-4">
         <div>
         <button type="button" class="btn btn-success" style="width:200px;">Submit Proposal</button>
@@ -121,6 +131,8 @@ Hourly
 
 <p>Member since Jul 19, 2017</p>
 <hr style="border: 1px solid black;">
+=======
+>>>>>>> 44e0238173a6808d1cee2e2882f1366ef35e4508
   </div><!-- end of container-->  
   
 </section>
