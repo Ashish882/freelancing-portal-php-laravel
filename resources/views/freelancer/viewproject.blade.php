@@ -9,7 +9,7 @@
 	<section class="das">
 <div class="container"  style="background: #fff; padding:50px;">
 <div class="row">
-<div class="col-md-6">
+<div class="col-md-10">
 
 <div class="form-group" style="font-size:25px";>
    <p><h2 style="font-size: 30px;
@@ -89,9 +89,19 @@ Hourly
   </label>
   
         </form>
-       
+        <div class="col-md-4">
+<div>
+
+
+
+</div>
+
+
+
         </div><!-- end of row-->   
-  </div><!-- end of container-->   
+        
+  </div><!-- end of container-->  
+  
 </section>
 	</div>
 </div>
