@@ -83,7 +83,7 @@
 <div class="form-group">
   <div class="form-check">
   <p>What type of project do you have?
-</p>
+  </p>
   <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios1" value="option1" checked>
   <label class="form-check-label" for="exampleRadios1">
     One Time Project
