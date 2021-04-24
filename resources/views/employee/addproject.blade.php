@@ -35,7 +35,8 @@
 </form>-->
 
 @extends('employee.header')
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw==" crossorigin="anonymous"></script>
 <!--**********************************
 	Content body start
 ***********************************-->
@@ -65,18 +66,22 @@
 <section class="das">
 <div class="container"  style="background: #fff; padding:50px;">
 <div class="row">
-<div class="col-md-6">
+
 <form  method="POST" action="addproject">
     @csrf
 
+<div class="col-md-12">
 <div class="form-group">
     <label style="padding-bottom:10px;" for="pname">Title</label>
-    <input type="text" class="form-control" id="pname" placeholder="Enter name of your job project" style="width:500px">
+    <input type="text" class="form-control" id="pname" placeholder="Enter name of your job project" style="width:100%">
   </div>
 
  
 
 </div>
+</div>
+
+<div class="row">
 
 <div class="col-md-6">
 
@@ -104,6 +109,7 @@
 </div>
 
 
+</div>
 </div>
 
 
