@@ -28,6 +28,7 @@ Main wrapper end
 Scripts
 ***********************************-->
 <!-- Required vendors -->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script src="xhtml/vendor/global/global.min.js"></script>
 <script src="xhtml/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
 <script src="xhtml/vendor/chart.js/Chart.bundle.min.js"></script>
@@ -98,6 +99,9 @@ jQuery(window).on('load',function(){
 			});
 		})(jQuery);
 	</script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw==" crossorigin="anonymous"></script>
 	
 
 

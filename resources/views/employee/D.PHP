@@ -4,13 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multilpe Select</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" />
+   
 </head>
 <body>
 
@@ -19,36 +15,39 @@
             width: 100%;
         }
     </style>
-    <div class="container-fluid h-100 bg-light text-dark">
-        <div class="row justify-content-center align-items-center">
-            <h1>Select Multilpe</h1>    
-        </div>
-        <br>
-        <div class="row justify-content-center align-items-center h-100">
-            <div class="col col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                <div class="form-group">
-                    <select class="mul-select" multiple="true">
-                        <option value="MYSQL">MYSQL</option>
-                        <option value="C">C</option>
-                        <option value="C++">C++</option>
-                        <option value="Ruby">Ruby</option>
-                        <option value="Python">Python</option>
-                        <option value="Java">Java</option>
-                        <option value="PHP">PHP</option>
-                    </select>
-                </div> 
-           </div>
-        </div>
-    </div>
+
+<div class="html ui top attached segment"><div class="ui fluid dropdown selection multiple" tabindex="0"><select name="skills" multiple="">
+        <option value="">Skills</option>
+<option value="angular">Angular</option>
+<option value="css">CSS</option>
+<option value="design">Graphic Design</option>
+<option value="ember">Ember</option>
+<option value="html">HTML</option>
+<option value="ia">Information Architecture</option>
+<option value="javascript">Javascript</option>
+<option value="mech">Mechanical Engineering</option>
+<option value="meteor">Meteor</option>
+<option value="node">NodeJS</option>
+<option value="plumbing">Plumbing</option>
+<option value="python">Python</option>
+<option value="rails">Rails</option>
+<option value="react">React</option>
+<option value="repair">Kitchen Repair</option>
+<option value="ruby">Ruby</option>
+<option value="ui">UI Design</option>
+<option value="ux">User Experience</option>
+      </select><i class="dropdown icon"></i><div class="default text">Skills</div><div class="menu transition hidden" tabindex="-1"><div class="item" data-value="angular">Angular</div><div class="item" data-value="css">CSS</div><div class="item" data-value="design">Graphic Design</div><div class="item" data-value="ember">Ember</div><div class="item" data-value="html">HTML</div><div class="item" data-value="ia">Information Architecture</div><div class="item" data-value="javascript">Javascript</div><div class="item" data-value="mech">Mechanical Engineering</div><div class="item" data-value="meteor">Meteor</div><div class="item" data-value="node">NodeJS</div><div class="item" data-value="plumbing">Plumbing</div><div class="item" data-value="python">Python</div><div class="item" data-value="rails">Rails</div><div class="item" data-value="react">React</div><div class="item" data-value="repair">Kitchen Repair</div><div class="item" data-value="ruby">Ruby</div><div class="item" data-value="ui">UI Design</div><div class="item" data-value="ux">User Experience</div></div></div><div class="ui top attached label">Example <i data-content="Copy code" class="copy link icon"></i></div></div>
+
+
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw==" crossorigin="anonymous"></script>
+
+  <script>
+  
+  $('.ui.dropdown').dropdown('show');
+
+  </script>
      
-    <script>
-        $(document).ready(function(){
-            $(".mul-select").select2({
-                    placeholder: "select language", //placeholder
-                    tags: true,
-                    tokenSeparators: ['/',',',';'," "] 
-                });
-            })
-    </script>
 </body>
 </html>
