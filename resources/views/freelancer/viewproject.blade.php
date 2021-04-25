@@ -119,8 +119,9 @@ Hourly
 </p>
 
 <p>Member since Jul 19, 2017</p>
-<div><br>
 <br>
+<br>
+<div>
         <button type="button" class="btn btn-success" style="width:200px;">Submit Proposal</button>
         </div>
   </div><!-- end of container-->  
