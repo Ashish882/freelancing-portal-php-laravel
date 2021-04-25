@@ -9,7 +9,7 @@
 	<section class="das">
 <div class="container"  style="background: #fff; padding:50px;">
 <div class="row">
-<div class="col-md-10">
+<div class="col-md-8">
 
 <div class="form-group" style="font-size:25px";>
    <p><h2 style="font-size: 30px;
@@ -80,7 +80,7 @@ Hourly
  
 <div class="form-group" style="font-size:25px,padding-top:50px";>
 <br>
-<button type="button" class="btn btn-success">Submit Proposal</button>
+
    
   </div>
 
@@ -89,8 +89,7 @@ Hourly
   </label>
   
         </form>
-        <div class="col-md-4">
-<div>
+       
 
 
 
@@ -100,6 +99,30 @@ Hourly
 
         </div><!-- end of row-->   
         
+        <div class="col-md-4" style="border:5px solid;border-radius: 25px;text-align:center;width:5%;font-size:100%;padding-top:50px;">
+
+       
+     <b>
+        <h7>
+        About the client</h7></b>
+ <br> <i class="fab fa-btc"style="font-size:15px;"></i> <p>Payment is verified</p>
+
+ <p><b>United States</b></p>
+ <p>Atlanta 02:35 pm
+</p>
+
+<p><b>445 jobs posted</b></p>
+ <p>8% hire rate, 20 open jobs
+</p>
+<p><b>37.09 /hr avg hourly rate paid</b></p>
+ <p>4 hours
+</p>
+
+<p>Member since Jul 19, 2017</p>
+<div><br>
+<br>
+        <button type="button" class="btn btn-success" style="width:200px;">Submit Proposal</button>
+        </div>
   </div><!-- end of container-->  
   
 </section>
@@ -112,3 +135,4 @@ Hourly
 @extends('freelancer.footer')
 
 
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
