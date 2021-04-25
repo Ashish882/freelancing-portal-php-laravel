@@ -1,5 +1,7 @@
 @extends('freelancer.header')
 
+
+
 <!--**********************************
 	Content body start
 ***********************************-->
@@ -11,11 +13,14 @@
 <div class="row"  style="border:1px solid silver;border-radius: 25px;text-align:center;width:100%;font-size:100%;padding-top:0px;padding-left:0px;padding-right:0px;">
 <div class="col-md-8">
 
+@foreach ($preview_project as $project)
+ 
+
 <div class="form-group" style="font-size:25px";>
    <p><h2 style="font-size: 30px;
     line-height: var(--line-height-h2);
     font-weight: var(--heading-weight);
-    letter-spacing: var(--heading-letter-spacing-h2);">Reputation management</h2>
+    letter-spacing: var(--heading-letter-spacing-h2);">{{  $project->pname }}</h2>
    </p>
    
   
@@ -86,6 +91,8 @@ Hourly
 
 
   </label>
+
+  @endforeach
   
         </form>
        
@@ -98,13 +105,7 @@ Hourly
 
         </div><!-- end of row-->   
         
-        <div class="col-md-4" style=" 
-        border-left: 1px solid silver;
-        height: 600px;
-  right: 10px;
-  padding-top:10px;
- 
-  " >
+        <div class="col-md-4" style="border-left: 1px solid silver;height: 600px;right: 10px;padding-top:10px;" >
 
        
      <b>
