@@ -1,3 +1,4 @@
+
 <!--@if ($errors->any())
     <div class="alert alert-danger">
         <ul>
@@ -69,10 +70,10 @@
 <form  method="POST" action="addproject">
     @csrf
 
-<div class="col-md-10">
+<div class="col-md-12">
 <div class="form-group">
-    <label style="padding-bottom:10px;font-size:20px;color:black;font-weight: 550;" for="pname">Title</label>
-    <input type="text" class="form-control" id="pname" placeholder="Enter name of your job project" style="width:1000px; border:1px solid black">
+    <label style="padding-bottom:10px;" for="pname">Title</label>
+    <input type="text" class="form-control" id="pname" placeholder="Enter name of your job project" style="width:100%">
   </div>
 
  
@@ -213,3 +214,4 @@
 ***********************************-->
 
 @extends('employee.footer')
+
