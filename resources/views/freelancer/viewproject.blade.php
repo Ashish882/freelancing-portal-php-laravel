@@ -8,7 +8,7 @@
 	<div class="container-fluid">		
 	<section class="das">
 <div class="container"  style="background: #fff; padding:50px;">
-<div class="row"  style="border:1px solid black;border-radius: 25px;text-align:center;width:100%;font-size:100%;padding-top:0px;padding-left:50px;padding-right:50px;">
+<div class="row"  style="border:1px solid silver;border-radius: 25px;text-align:center;width:100%;font-size:100%;padding-top:0px;padding-left:0px;padding-right:0px;">
 <div class="col-md-8">
 
 <div class="form-group" style="font-size:25px";>
@@ -99,9 +99,8 @@ Hourly
         </div><!-- end of row-->   
         
         <div class="col-md-4" style=" 
-        border-left: 1px solid black;
-  height: 600px;
-  
+        border-left: 1px solid silver;
+        height: 600px;
   right: 10px;
   padding-top:10px;
  
@@ -112,7 +111,7 @@ Hourly
         <h7>
         About the client</h7></b>
  <br> <i class="fab fa-btc"style="font-size:15px;"></i> <p>Payment is verified</p>
-<hr style="padding-left:;">
+<hr >
  <p><b>United States</b></p>
  <p>Atlanta 02:35 pm
 </p>
