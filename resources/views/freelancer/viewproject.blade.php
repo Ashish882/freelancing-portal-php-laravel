@@ -28,19 +28,15 @@
   </div>
 
   <div class="form-group">
-   <p> Search Engine Optimization
+   <p> {{  $project->pcat }}
    </p>
    
-   <p><i class="fa fa-bullhorn" aria-hidden="true"></i> &nbsp;&nbsp;Specialized profiles can help you better highlight your expertise when submitting proposals to jobs like these.
+   <p><i class="fa fa-bullhorn" aria-hidden="true"></i>&nbsp;&nbsp; {{$project->dis}}
    </p>
-   <p><i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp;&nbsp;Worldwide</p>
+   <p><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp; India</p>
    
   <hr>
-   <div class="form-group" >
-   <p>I have restaurant in maharashtra which has 3 stars review on google , and I want to bring it at 5 stars.  I want my freelancer to be up to the mark with each and every work I sign to them .
-   </p>
-   
-  </div>
+ 
  
 
   
@@ -49,20 +45,42 @@
   
 
   <div class="row">
-  <div class="col-4">
-  Less than 30 hrs/week
-Hourly
+  <div class="col-4" >
+
+  <p style="border: 1px solid;
+    padding: 13px;
+    border-radius: 60px;
+    background-color: #4f5ca4;
+    color: #fff;">
+   30 hrs/week Hourly
+  </p>
   </div>
 
   <div class="col-4">
 
-  Less than a month
+  <p style="border: 1px solid;
+    padding: 13px;
+    border-radius: 60px;
+    background-color: #4f5ca4;
+    color: #fff;">
+    Less than a month
+  </p>
+
+
   
   </div>
 
   <div class="col-4">
 
+  <p style="border: 1px solid;
+    padding: 13px;
+    border-radius: 60px;
+    background-color: #4f5ca4;
+    color: #fff;">
   Intermediate
+  </p>
+
+  
   
   </div>
   
@@ -77,10 +95,11 @@ Hourly
 
 <hr>
 <h3>Skills and Expertise</h3>
-<a href=""  class="cfe-ui-job-skill up-skill-badge m-0-left m-0-top m-xs-bottom">Frontend Development</a>&nbsp;&nbsp;
-<a href=""  class="cfe-ui-job-skill up-skill-badge m-0-left m-0-top m-xs-bottom">SEO expert</a>&nbsp;&nbsp;
-<a href=""  class="cfe-ui-job-skill up-skill-badge m-0-left m-0-top m-xs-bottom">Backend Development</a>&nbsp;&nbsp;
-<a href=""  class="cfe-ui-job-skill up-skill-badge m-0-left m-0-top m-xs-bottom">Full stack Developer</a>&nbsp;&nbsp;
+<br>
+<a href="" style="border: 1px solid;padding: 6px;font-size: 13px;border-radius: 80px;background-color: #F2F2F2;color: #333;"  class="cfe-ui-job-skill up-skill-badge m-0-left m-0-top m-xs-bottom">Frontend Development</a>&nbsp;&nbsp;
+<a href="" style="border: 1px solid;padding: 6px;font-size: 13px;border-radius: 80px;background-color: #F2F2F2;color: #333;"   class="cfe-ui-job-skill up-skill-badge m-0-left m-0-top m-xs-bottom">SEO expert</a>&nbsp;&nbsp;
+<a href="" style="border: 1px solid;padding: 6px;font-size: 13px;border-radius: 80px;background-color: #F2F2F2;color: #333;"  class="cfe-ui-job-skill up-skill-badge m-0-left m-0-top m-xs-bottom">Backend Development</a>&nbsp;&nbsp;
+<a href="" style="border: 1px solid;padding: 6px;font-size: 13px;border-radius: 80px;background-color: #F2F2F2;color: #333;"  class="cfe-ui-job-skill up-skill-badge m-0-left m-0-top m-xs-bottom">Full stack Developer</a>&nbsp;&nbsp;
 
 <div class="form-group" style="font-size:25px,padding-top:50px";>
 <br>
@@ -111,7 +130,7 @@ Hourly
      <b>
         <h7>
         About the client</h7></b>
- <br> <i class="fab fa-btc"style="font-size:15px;"></i> <p>Payment is verified</p>
+ <br> <p>Payment is verified</p>
 <hr >
  <p><b>United States</b></p>
  <p>Atlanta 02:35 pm
@@ -124,9 +143,7 @@ Hourly
  <p>4 hours
 </p>
 <hr>
-<p>Member since Jul 19, 2017</p>
-<br>
-<br>
+
 <div>
         <button type="button" class="btn btn-success" style="width:200px;">Submit Proposal</button>
         </div>

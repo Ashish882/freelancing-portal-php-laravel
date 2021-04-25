@@ -54,7 +54,7 @@
 				<div class="d-flex flex-wrap search-row bg-white py-3 mb-3 rounded justify-content-between align-items-center">
 					<div class="d-flex col-lg-12 col-sm-6 align-items-center">
 						<div>
-							<h2 class="title"><a href="profile.html" class="text-black"> {{ $project->pname}}</a></h2>
+							<h2 class="title"><a href="viewproject/{{ $project->id}}" class="text-black"> {{ $project->pname}}</a></h2>
 							<span class="text-primary">{{ $project->pcat }}</span>
 							<p class="pt-4">
 
