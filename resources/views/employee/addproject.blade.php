@@ -46,8 +46,8 @@
 
 
 		
-		<div class="row">
-			<div class="col-lg-12">
+		<div class="row" >
+			<div class="col-lg-12" >
       @if ($errors->any())
     <div class="alert alert-danger">
         <ul>
@@ -63,17 +63,17 @@
 					<div class="d-flex col-lg-12 col-sm-6 align-items-center">
 						<div>
 
-<section class="das">
+<section class="das" >
 <div class="container"  style="background: #fff; padding:50px;">
-<div class="row">
+<div class="row" > 
 
 <form  method="POST" action="addproject">
     @csrf
 
 <div class="col-md-12">
 <div class="form-group">
-    <label style="padding-bottom:10px;" for="pname">Title</label>
-    <input type="text" class="form-control" id="pname" placeholder="Enter name of your job project" style="width:100%">
+&nbsp; <label style="padding-bottom:10px;width:400px;" for="pname">Title</label>
+&nbsp;  <input type="text" class="form-control" id="pname" placeholder="Enter name of your job project" style="width:100%">
   </div>
 
  
@@ -83,25 +83,25 @@
 
 <div class="row">
 
-<div class="col-md-6">
+<div class="col-md-12">
 
 <div class="form-group">
   <div class="form-check">
   <p>What type of project do you have?
   </p>
-  <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios1" value="option1" checked>
+  &nbsp;  <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios1" value="option1" checked>
   <label class="form-check-label" for="exampleRadios1">
     One Time Project
   </label>
 </div>
 <div class="form-check">
-  <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios2" value="option2">
+&nbsp;   <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios2" value="option2">
   <label class="form-check-label" for="exampleRadios2">
     Ongoing Project
   </label>
 </div>
 <div class="form-check">
-  <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios3" value="option3">
+&nbsp;   <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios3" value="option3">
   <label class="form-check-label" for="exampleRadios3">
     Complex Project
   </label>
@@ -116,7 +116,7 @@
 
 
 
-  <div class="col-md-6" style="padding-top:50px;">
+  <div class="col-md-12" style="padding-top:50px;">
 <div class="form-check"><p>What level of experience should your freelancer have?
 </p>
   <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios1" value="option1" >
@@ -138,7 +138,7 @@
 </div>
 </div>
 
-<div class="col-md-6" style="padding-top:50px;">
+<div class="col-md-12" style="padding-top:50px;">
 
 
   <div class="est" style="margin-top:50px;" >
@@ -157,7 +157,7 @@
 
 </div>
 
-<div class="col-md-6">
+<div class="col-md-12">
 <div class="form-group"><p>Additional project files (optional)</p>
     <label for="exampleFormControlFile1"></label>
     <input type="file" class="form-control-file" id="exampleFormControlFile1">
@@ -173,7 +173,7 @@
 
 <div class="form-group">
 
-<label style="padding-bottom:10px;" for="exampleFormControlTextarea1">Description</label><br>
+<label style="padding-bottom:10px;padding-top:50px;" for="exampleFormControlTextarea1">Description</label><br>
 
 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" ></textarea>
 </div>
