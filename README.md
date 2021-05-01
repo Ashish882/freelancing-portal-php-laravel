@@ -1,6 +1,6 @@
 ﻿# freelancing-portal-php-laravel
 
-#Installing the project
+#Installing this project
 
 Live preview :-- https://gentle-atoll-27654.herokuapp.com/
 
@@ -9,3 +9,5 @@ Live preview :-- https://gentle-atoll-27654.herokuapp.com/
 3. npm install
 4. create .env file and copy .env.example and paste it on .env 
 6. php artisan migrate
+
+
