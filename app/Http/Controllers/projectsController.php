@@ -74,7 +74,7 @@ class projectsController extends Controller
   
 
 
-    echo $data = apply_projects::create([
+     $data = apply_projects::create([
       'free_id' => $free_id,
       'project_id' => $pid,
       'resume_path' => $j_path ,
@@ -82,6 +82,12 @@ class projectsController extends Controller
       'price' => $price,
       'status'=> $status,
       ]);
+
+
+      if($data){
+
+        return "Successfully applied for project";
+      }
 
 
    }

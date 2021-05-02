@@ -65,5 +65,12 @@ class viewProjectController extends Controller
   
    }
 
+   public function myviewproject($id){
+
+    $project = DB::select("select * from projects WHERE id = $id");
+    return view('employee.myviewproject',['preview_project'=>$project]);
+
+   }
+
 
 }

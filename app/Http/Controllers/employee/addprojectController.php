@@ -32,7 +32,7 @@ class addprojectController extends Controller
       $status = '0';
       $id = Auth::id();
         
-      echo $data = addproject::create([
+       $data = addproject::create([
         'pname' => $request->pname,
         'pcat' => $request->pcat,
         'dis' => $request->dis,
@@ -41,6 +41,11 @@ class addprojectController extends Controller
         'emp_id'=> $id ,
         ]);
 
+       
+        if($data){
+
+          return "Project added Successfully";
+        }
     }
 
 }

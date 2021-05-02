@@ -36,22 +36,19 @@
 <div class="content-body">
 	<!-- row -->
 	<div class="container-fluid">
-		
-			
-
-	
 		<div class="row">
 			<div class="col-lg-12">
-			<!--@foreach ($emp_project as $project)
 
-			<?php// $aldapply = App\Http\Controllers\freelancer\DashboardController::check_if_already_apply($project->id) ?>
+		@foreach ($emp_project as $project)
+		<?php  $aldapply = App\Http\Controllers\freelancer\DashboardController::check_if_already_apply($project->id) ?>
 
-			@if ($aldapply == 1)
+		@if ($aldapply == 1)
+			
+		<div class="d-flex flex-wrap search-row bg-white py-3 mb-3 rounded justify-content-between align-items-center">
 
-				<div class="d-flex flex-wrap search-row bg-white py-3 mb-3 rounded justify-content-between align-items-center">
 					<div class="d-flex col-lg-12 col-sm-6 align-items-center">
 						<div>
-							<h2 class="title"><a href="profile.html" class="text-black"> {{ $project->pname}}</a></h2>
+							<h2 class="title"><a href="" class="text-black"> {{ $project->pname}}</a></h2>
 							<span class="text-primary">{{ $project->pcat }}</span>
 							<p class="pt-4">
 
@@ -59,7 +56,8 @@
 
 							</p>
 						</div>
-					</div>
+		            </div>
+
 					<div class="d-flex col-lg-4 col-sm-6 align-items-center pt-4">
 						<svg class="mr-3 ml-lg-0 ml-sm-auto ml-0 mt-sm-0 mt-3" width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<rect width="54" height="54" rx="15" fill="#2BC155"/>
@@ -83,7 +81,7 @@
 					</div>
 					
 					<div class="col-xxl-3 text-xl-right text-lg-left text-sm-right col-lg-12 col-sm-6 mt-xl-0 mt-3">
-						<a href="apply_project/{{ $project->id }} " class="btn btn-sm btn-outline-primary rounded mr-2">Apply Now</a>
+						<a href="myviewproject/{{ $project->id }} " class="btn btn-sm btn-outline-primary rounded mr-2">Preview</a>
 					
 					</div>
 				</div>
@@ -91,7 +89,7 @@
 				@endif
 
 				@endforeach
-				<!------------------------------------------------------->
+				<!--------------------------------------------------
 
 
                 <div class="d-flex flex-wrap search-row bg-white py-3 mb-3 rounded justify-content-between align-items-center">
@@ -145,7 +143,7 @@
 									<h4 class="sub-title text-black">Number Of Appliciant</h4>
 									<span>12</span>
 								</div>
-							</div>
+							</div>----->
 
 
 

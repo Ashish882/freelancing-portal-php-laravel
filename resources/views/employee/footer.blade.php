@@ -28,24 +28,23 @@ Main wrapper end
 Scripts
 ***********************************-->
 <!-- Required vendors -->
-<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-<script src="xhtml/vendor/global/global.min.js"></script>
-<script src="xhtml/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-<script src="xhtml/vendor/chart.js/Chart.bundle.min.js"></script>
-<script src="xhtml/js/custom.min.js"></script>
-<script src="xhtml/js/deznav-init.js"></script>
-<script src="xhtml/vendor/owl-carousel/owl.carousel.js"></script>
+<script src="{{ asset('xhtml/vendor/global/global.min.js') }}"></script>
+<script src="{{ asset('xhtml/vendor/bootstrap-select/dist/js/bootstrap-select.min.js') }}"></script>
+<script src="{{ asset('xhtml/vendor/chart.js/Chart.bundle.min.js') }}"></script>
+<script src="{{ asset('xhtml/js/custom.min.js') }}"></script>
+<script src="{{ asset('xhtml/js/deznav-init.js') }}"></script>
+<script src="{{ asset('html/vendor/owl-carousel/owl.carousel.js') }}"></script>
 
 <!-- Chart piety plugin files -->
-<script src="xhtml/vendor/peity/jquery.peity.min.js"></script>
+<script src="{{ asset('xhtml/vendor/peity/jquery.peity.min.js') }}"></script>
 
 <!-- Apex Chart -->
-<script src="xhtml/vendor/apexchart/apexchart.js"></script>
+<script src="{{ asset('xhtml/vendor/apexchart/apexchart.js') }}"></script>
 
 <!-- Dashboard 1 -->
-<script src="xhtml/js/dashboard/dashboard-1.js"></script>
+<script src="{{ asset('xhtml/js/dashboard/dashboard-1.js') }}"></script>
 	<!-- Datatable -->
-	<script src="xhtml/vendor/datatables/js/jquery.dataTables.min.js"></script>
+	<script src="{{ asset('xhtml/vendor/datatables/js/jquery.dataTables.min.js') }}"></script>
 <script>
 function carouselReview(){
     /*  testimonial one function by = owl.carousel.js */

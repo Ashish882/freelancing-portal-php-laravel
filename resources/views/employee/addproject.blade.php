@@ -71,14 +71,14 @@
     @csrf
 
 <div class="col-md-12">
+
 <div class="form-group">
 &nbsp; <label style="padding-bottom:10px;width:400px;" for="pname">Title</label>
-&nbsp;  <input type="text" class="form-control" id="pname" placeholder="Enter name of your job project" style="width:100%">
-  </div>
-
- 
-
+&nbsp; <input type="text" class="form-control" name="pname" placeholder="Enter name of your job project" style="width:100%">
 </div>
+</div>
+
+
 </div>
 
 <div class="row">
@@ -115,8 +115,7 @@
 
 
 
-
-  <div class="col-md-12" style="padding-top:50px;">
+<div class="col-md-12" style="padding-top:50px;">
 <div class="form-check"><p>What level of experience should your freelancer have?
 </p>
   <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios1" value="option1" >
@@ -139,22 +138,28 @@
 </div>
 
 <div class="col-md-12" style="padding-top:50px;">
-
-
   <div class="est" style="margin-top:50px;" >
   <p>
         Enter your estimated budget
 </p>
 <div class="input-group mb-3">
   <div class="input-group-prepend">
-    <span class="input-group-text">$</span>
+    <span class="input-group-text">Rs</span>
   
   </div>
-  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+  <input type="text" name="price" class="form-control" aria-label="Amount (to the nearest dollar)">
 </div>
 
 </div>
 
+</div>
+
+<div class="col-md-12">
+
+<div class="form-group">
+&nbsp; <label style="padding-bottom:10px;width:400px;" for="pcat">Skills Required</label>
+&nbsp; <input type="text" class="form-control" name="pcat" placeholder="Enter the skills" style="width:100%">
+</div>
 </div>
 
 <div class="col-md-12">
@@ -175,7 +180,7 @@
 
 <label style="padding-bottom:10px;padding-top:50px;" for="exampleFormControlTextarea1">Description</label><br>
 
-<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" ></textarea>
+<textarea name="dis" class="form-control" id="exampleFormControlTextarea1" rows="3" ></textarea>
 </div>
 
 

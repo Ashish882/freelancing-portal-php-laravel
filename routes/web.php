@@ -42,7 +42,7 @@ Route::get('employee_dashboard', [employee::class ,'index'])
 
 Route::get('freelancer_dashboard',[freelancer::class,'index'])
                 ->middleware('role:3');       
-////////////////////////////////  Employeee  ////////////////////////////////////////////////////////////
+//////////////////////////////////////---//Employee//---////////////////////////////////////////////////////////////
 Route::get('addproject',[addproject::class,'create'])
                 ->middleware('role:2');
 Route::post('addproject', [addproject::class, 'addproject'])
@@ -52,6 +52,8 @@ Route::post('addproject', [addproject::class, 'addproject'])
 
 Route::get('viewproject',[viewproject::class,'index'])
                 ->middleware('role:2');
+
+Route::get('myviewproject/{id}',[viewproject::class,'myviewproject'])->middleware('role:2');
                 
 
 
@@ -84,6 +86,10 @@ Route::get('view_application',[freelancer::class,'view_application'])->middlewar
 Route::get('project',[freelancer::class,'view_projects'])->middleware('role:3');
 Route::get('profile',[freelancer::class,'view_profile'])->middleware('role:3');
 Route::get('viewproject/{id}',[freelancer::class,'preview_projects'])->middleware('role:3');
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 require __DIR__.'/auth.php';

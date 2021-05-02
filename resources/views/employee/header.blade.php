@@ -10,14 +10,13 @@
 <title>Freelancing portal</title>
 <!-- Favicon icon -->
 <link rel="icon" type="image/png" sizes="16x16" href="xhtml/images/favicon.png">
-<link href="xhtml/vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="vendor/chartist/css/chartist.min.css">
-<link href="xhtml/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
-<link href="xhtml/vendor/owl-carousel/owl.carousel.css" rel="stylesheet">
-<link href="xhtml/vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
-<link href="xhtml/css/style.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;family=Roboto:wght@100;300;400;500;700;900&amp;display=swap" rel="stylesheet">
-</head>
+<link href="{{ asset('xhtml/vendor/jqvmap/css/jqvmap.min.css') }}" rel="stylesheet">
+<link rel="stylesheet" href="{{ asset('vendor/chartist/css/chartist.min.css') }}">
+<link href="{{ asset('xhtml/vendor/bootstrap-select/dist/css/bootstrap-select.min.css') }}" rel="stylesheet">
+<link href="{{ asset('xhtml/vendor/owl-carousel/owl.carousel.css') }}" rel="stylesheet">
+<link href="{{ asset('xhtml/vendor/datatables/css/jquery.dataTables.min.css') }}" rel="stylesheet">
+<link href="{{ asset('xhtml/css/style.css') }}" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;family=Roboto:wght@100;300;400;500;700;900&amp;display=swap" rel="stylesheet"></head>
 <body>
 
 <!--*******************
@@ -44,7 +43,7 @@ Main wrapper start
 ***********************************-->
 <div class="nav-header">
     <a href="index.php" class="brand-logo">
-        <img class="logo-abbr" src="xhtml/images/logo.png" alt="">
+        <img class="logo-abbr" src="#" alt="">
         <img class="logo-compact" src="xhtml/images/logo-text.png" alt="">
         <img class="brand-title" src="/xhtml/images/logo-text.png" alt="">
     </a>
@@ -70,7 +69,7 @@ Main wrapper start
             <div class="collapse navbar-collapse justify-content-between">
                 <div class="header-left">
                     <div class="dashboard_bar">
-                        Freelancer Dashboard
+                        Employee Dashboard
                     </div>
                 </div>
                 <ul class="navbar-nav header-right">
@@ -175,7 +174,7 @@ Main wrapper start
                                 <span class="text-black"><strong>{{ Auth::user()->name }}</strong></span>
                                 <p class="fs-12 mb-0">Employee</p>
                             </div>
-                            <img src="xhtml/images/profile/17.jpg" width="20" alt=""/>
+                            <img src="{{ asset('xhtml/images/profile/17.jpg') }}" width="20" alt=""/>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
                             <a href="app-profile.html" class="dropdown-item ai-icon">
@@ -216,7 +215,7 @@ Main wrapper start
 <div class="deznav">
     <div class="deznav-scroll">
         <ul class="metismenu" id="menu">
-            <li><a class="ai-icon" href="freelancer_dashboard">
+            <li><a class="ai-icon" href="./freelancer_dashboard">
                     <i class="flaticon-381-networking"></i>
                     <span class="nav-text">Dashboard</span>
                 </a>

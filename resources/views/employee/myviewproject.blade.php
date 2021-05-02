@@ -1,26 +1,27 @@
-@extends('freelancer.header')
-
-
-
+@extends('employee.header')
 <!--**********************************
 	Content body start
 ***********************************-->
+
 <div class="content-body">
-	<!-- row -->
-	<div class="container-fluid">		
-	<section class="das">
-<div class="container"  style="background: #fff; padding:50px;">
-<div class="row"  style="border:1px solid silver;border-radius: 25px;text-align:center;width:100%;font-size:100%;padding-top:0px;padding-left:0px;padding-right:0px;">
+<!-- row -->
+<div class="container-fluid">		
+<section class="das">
+<div class="container" style="background: #fff; padding:50px;">
+<div class="row" style="border:1px solid silver;border-radius: 25px;text-align:center;width:100%;font-size:100%;padding-top:0px;padding-left:0px;padding-right:0px;">
 <div class="col-md-8">
 
 @foreach ($preview_project as $project)
  
 
 <div class="form-group" style="font-size:25px";>
-   <p><h2 style="font-size: 30px;
+   <p>
+   
+   <h2 style="font-size: 30px;
     line-height: var(--line-height-h2);
     font-weight: var(--heading-weight);
     letter-spacing: var(--heading-letter-spacing-h2);">{{  $project->pname }}</h2>
+    
    </p>
    
   
@@ -144,72 +145,27 @@
 </p>
 <hr>
 
-<div>
-        <button type="button" class="btn btn-success" style="width:200px;">Submit Proposal</button>
-        </div>
+
 
 
 <div>
-
-<!--
-
-<style>
-        .mul-select{
-            width: 100%;
-        }
-    </style>
-    <div class="container-fluid h-100 bg-light text-dark">
-        <div class="row justify-content-center align-items-center">
-            <h1>Select Multilpe</h1>    
-        </div>
-        <br>
-        <div class="row justify-content-center align-items-center h-100">
-            <div class="col col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                <div class="form-group">
-                    <select class="mul-select" multiple="true">
-                        <option value="MYSQL">MYSQL</option>
-                        <option value="C">C</option>
-                        <option value="C++">C++</option>
-                        <option value="Ruby">Ruby</option>
-                        <option value="Python">Python</option>
-                        <option value="Java">Java</option>
-                        <option value="PHP">PHP</option>
-                    </select>
-                </div> 
-           </div>
-        </div>
-    </div>
-     
-    <script>
-        $(document).ready(function(){
-            $(".mul-select").select2({
-                    placeholder: "select language", //placeholder
-                    tags: true,
-                    tokenSeparators: ['/',',',';'," "] 
-                });
-            })
-    </script>
-
-</div>-->
-
-
-
-
-
-
-
-
 
   </div><!-- end of container-->  
   
 </section>
 	</div>
 </div>
+
+
+
+
+
+
+
+
+
+
 <!--**********************************
 	Content body end
 ***********************************-->
-
-@extends('freelancer.footer')
-
-
-<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+@extends('employee.footer')

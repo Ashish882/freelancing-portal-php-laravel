@@ -96,7 +96,7 @@ Content body start
 </td>
 <td>
     <div class="d-flex align-items-center">
-        <a class="btn rounded btn-success mr-3 ml-auto" href="#">Hired</a>
+        <a class="btn rounded btn-success mr-3 ml-auto" href="#">Pending</a>
         <div class="dropdown float-right custom-dropdown mb-0">
             <div class="" data-toggle="dropdown">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
