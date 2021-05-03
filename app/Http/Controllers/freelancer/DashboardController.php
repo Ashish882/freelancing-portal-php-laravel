@@ -56,4 +56,11 @@ class DashboardController extends Controller
         $project = DB::select("select * from projects WHERE id = $id");
         return view('freelancer.viewproject',['preview_project'=>$project]);
       }
+
+      public function editprofile() {
+    //    $project = DB::select("select * from projects WHERE id = $id");
+        return view('freelancer.editprofile');
+      }
+
+      
 }

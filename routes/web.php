@@ -86,6 +86,9 @@ Route::get('view_application',[freelancer::class,'view_application'])->middlewar
 Route::get('project',[freelancer::class,'view_projects'])->middleware('role:3');
 Route::get('profile',[freelancer::class,'view_profile'])->middleware('role:3');
 Route::get('viewproject/{id}',[freelancer::class,'preview_projects'])->middleware('role:3');
+Route::get('editprofile',[freelancer::class,'editprofile'])->middleware('role:3');
+
+
 
 
 
