@@ -45,6 +45,7 @@
 		</div>
 		<div class="row">
 			<div class="col-lg-12">
+			
 			@foreach ($emp_project as $project)
 
 			<?php $aldapply = App\Http\Controllers\freelancer\DashboardController::check_if_already_apply($project->id) ?>

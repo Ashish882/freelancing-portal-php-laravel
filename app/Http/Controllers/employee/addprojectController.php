@@ -44,7 +44,7 @@ class addprojectController extends Controller
        
         if($data){
 
-          return "Project added Successfully";
+          return redirect('viewproject')->with('message', 'Project added Successfully!');
         }
     }
 

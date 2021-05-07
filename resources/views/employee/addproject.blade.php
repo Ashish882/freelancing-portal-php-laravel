@@ -65,11 +65,14 @@
 
             <section>
 <div class="card" >
+
+<form  method="POST" action="addproject">
+    @csrf
   
 
     <div class="form-group">
  <label style="padding-bottom:10px;font-size:20px;font-weight: bold;padding-top:20px;" for="pname">Choose a name for your project</label>
- <input type="text" class="form-control" id="pname" placeholder="Enter name of your job project" style="width:100%;height:50px;font-size:15px;">
+ <input type="text" class="form-control" name="pname" placeholder="Enter name of your job project" style="width:100%;height:50px;font-size:15px;">
   </div>
 
   <p  style="padding-bottom:10px;font-size:20px;font-weight: bold;padding-top:20px;">  What type of project do you have?
@@ -171,8 +174,15 @@
 
 
     </div>
-    </section>
-						</div>
+
+    </form>
+
+</div>
+
+</section>
+
+
+
 					</div>
 		</div>
 					
