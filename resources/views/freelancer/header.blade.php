@@ -229,7 +229,7 @@ Main wrapper start
             
             </li>
 
-            <li><a class="ai-icon" href="view_application" >
+            <li><a class="ai-icon" href="{{ asset('view_application') }}" >
                     <i class="flaticon-381-television"></i>
                     <span class="nav-text">Application</span>
                 </a>
@@ -238,13 +238,13 @@ Main wrapper start
             
             </li>
            
-            <li><a href="profile" class="ai-icon" aria-expanded="false">
+            <li><a href="{{ asset('profile') }}" class="ai-icon" aria-expanded="false">
                     <i class="flaticon-381-settings-2"></i>
                     <span class="nav-text">Profile</span>
                 </a>
             </li>
         
-            <li><a class="ai-icon" href="settings" >
+            <li><a class="ai-icon" href="#" >
                     <i class="flaticon-381-layer-1"></i>
                     <span class="nav-text">Settings</span>
                 </a>

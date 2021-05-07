@@ -10,6 +10,13 @@
 	<div class="container-fluid">		
 	<section class="das">
 <div class="container"  style="background: #fff; padding:50px;">
+
+@if(session()->has('message'))
+    <div class="alert alert-success">
+        {{ session()->get('message') }}
+    </div>
+@endif
+
 <div class="row"  style="border:1px solid silver;border-radius: 25px;text-align:center;width:100%;font-size:100%;padding-top:0px;padding-left:0px;padding-right:0px;">
 <div class="col-md-8">
 
@@ -145,7 +152,9 @@
 <hr>
 
 <div>
-        <button type="button" class="btn btn-success" style="width:200px;">Submit Proposal</button>
+
+
+        <a href='{{ asset("apply_project/$project->id") }}' class="btn btn-success" style="width:200px;">Submit Proposal</a>
         </div>
 
 

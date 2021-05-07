@@ -8,7 +8,7 @@ Content body start
 <div class="container-fluid">
 <div class="d-flex flex-wrap mb-4 align-items-center search-filter">
 <div class="mr-auto mb-2 pr-2">
-<h6 class="text-black fs-16 font-w600 mb-1">Showing 10 Jobs Results</h6>
+<h6 class="text-black fs-16 font-w600 mb-1">All the application proposal </h6>
 <span class="fs-14">Based your preferences</span>
 </div>
 <!--

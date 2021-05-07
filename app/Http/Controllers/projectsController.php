@@ -43,7 +43,7 @@ class projectsController extends Controller
 
         else{
 
-            echo "already applied";
+            return redirect('viewproject/'.$id.'')->with('message', 'Already Applied!');
         }
   
   
@@ -86,15 +86,16 @@ class projectsController extends Controller
 
       if($data){
 
-        return "Successfully applied for project";
+
+        return redirect('viewproject/'.$pid.'')->with('message', 'Successfully applied for project!');
+
       }
 
 
    }
 
    else{
-
-    echo "Already applied";
+    return redirect('viewproject/'.$id.'')->with('message', 'Already Applied!');
    }
 }
 
