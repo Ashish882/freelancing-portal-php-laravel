@@ -42,7 +42,7 @@
     <div class="alert alert-success">
         {{ session()->get('message') }}
 	</div>
-		@endif
+	@endif
 
 		<div class="row">
 			<div class="col-lg-12">
@@ -97,6 +97,14 @@
 				@endif
 
 				@endforeach
+
+				
+
+
+
+
+
+
 				<!--------------------------------------------------
 
 
@@ -152,17 +160,18 @@
 									<span>12</span>
 								</div>
 							</div>----->
-
-
-
-
-
-
-
-			
 				</div>
 					
 			</div>
+
+
+			
+
+
+
+
+
+
 		</div>
 	</div>
 </div>
