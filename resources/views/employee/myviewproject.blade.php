@@ -222,7 +222,10 @@
                 aria-label="Project name: activate to sort column ascending" style="width: 258px;">
                 Freelancer name</th>
                 <th class="sorting" tabindex="0" aria-controls="example5" rowspan="1" colspan="1" 
-                aria-label="Type: activate to sort column ascending" style="width: 85.2px;">id</th><th class="sorting" tabindex="0" aria-controls="example5" rowspan="1" colspan="1" aria-label="Contact: activate to sort column ascending" style="width: 54.8px;">Contact</th><th class="sorting" tabindex="0" aria-controls="example5" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending" style="width: 94px;">Status</th></tr>
+                aria-label="Type: activate to sort column ascending" style="width: 85.2px;">id</th><th class="sorting" tabindex="0" aria-controls="example5" rowspan="1" colspan="1" aria-label="Contact: activate to sort column ascending" style="width: 54.8px;">Download</th><th class="sorting" tabindex="0" aria-controls="example5" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending" style="width: 94px;">Status</th></tr>
+       
+       
+       
         </thead>
 <tbody>
 
@@ -488,7 +491,7 @@
 
 <td>
     <div class="d-flex">
-        <a class="contact-icon" href="#"><i class="las la-envelope" style="margin-top:10px;"></i></a>
+        <a class="contact-icon" href="#"><i class="fa fa-cloud-download"></i></a>
     </div>
 </td>
 <td>
@@ -529,7 +532,7 @@
 
 <td>
     <div class="d-flex">
-        <a class="contact-icon" href="#"><i class="las la-envelope" style="margin-top:10px;"></i></a>
+        <a class="contact-icon" href="#"><i class="fa fa-cloud-download"></i> </a>
     </div>
 </td>
 <td>
