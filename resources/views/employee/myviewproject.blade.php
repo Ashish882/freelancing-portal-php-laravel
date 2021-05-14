@@ -209,25 +209,13 @@
 </a>
 </div>
 <div class="row">
-<div class="col-xl-12">
+<div class="col-xl-12" style="   padding-left: 100px;">
 <div class="table-responsive">
-    <div id="example5_wrapper" class="dataTables_wrapper no-footer"><table class="table display mb-4 dataTablesCard table-responsive-xl card-table dataTable no-footer" id="example5" role="grid" aria-describedby="example5_info">
-        <thead>
-            <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="example5" rowspan="1" colspan="1" aria-sort="ascending" aria-label="
-                    
-                : activate to sort column descending" style="width: 0.4px;">
-                    
-                </th><th class="sorting" tabindex="0" aria-controls="example5" rowspan="1" colspan="1" aria-label="ID: activate to sort column ascending" style="width: 18px;">ID</th><th class="sorting" tabindex="0" aria-controls="example5" rowspan="1" colspan="1" aria-label="Date Applied: activate to sort column ascending" style="width: 135.6px;">Date Applied</th>
-                <th class="sorting" tabindex="0" aria-controls="example5" rowspan="1" colspan="1" 
-                aria-label="Project name: activate to sort column ascending" style="width: 258px;">
-                Freelancer name</th>
-                <th class="sorting" tabindex="0" aria-controls="example5" rowspan="1" colspan="1" 
-                aria-label="Type: activate to sort column ascending" style="width: 85.2px;">id</th><th class="sorting" tabindex="0" aria-controls="example5" rowspan="1" colspan="1" aria-label="Contact: activate to sort column ascending" style="width: 54.8px;">Download</th><th class="sorting" tabindex="0" aria-controls="example5" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending" style="width: 94px;">Status</th></tr>
-       
-       
-       
-        </thead>
-<tbody>
+    <div id="example5_wrapper" class="dataTables_wrapper no-footer">
+    
+
+
+
 
 
 
@@ -471,90 +459,184 @@
                     </div>
                 </td>
             </tr>-->
-        <tr role="row" class="odd">
-<td class="sorting_1">
-   
-</td>
-<td>#1</td>
-<td>2021-04-07 17:58:56 </td>
-<td>
-    <div class="media">
-   
-        <div class="media-body text-nowrap">
-            <h6 class="text-black font-w600 fs-16 mb-0">Android Backend and admin needed </h6>
-            <span class="fs-14">php </span>
-      
-        </div>
-    </div>
-</td>
-<td>Fixed project</td>
+       
+       
+       
+       
+       
+       <!--Table-->
+<table class="table table-striped w-auto" >
 
-<td>
-    <div class="d-flex">
-        <a class="contact-icon" href="#"><i class="fa fa-cloud-download"></i></a>
-    </div>
-</td>
-<td>
-    <div class="d-flex align-items-center">
-        <a class="btn rounded btn-success mr-3 ml-auto" href="#">Pending</a>
-        <div class="dropdown float-right custom-dropdown mb-0">
-            <div class="" data-toggle="dropdown">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z" stroke="#2E2E2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M12 6C12.5523 6 13 5.55228 13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6Z" stroke="#2E2E2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M12 20C12.5523 20 13 19.5523 13 19C13 18.4477 12.5523 18 12 18C11.4477 18 11 18.4477 11 19C11 19.5523 11.4477 20 12 20Z" stroke="#2E2E2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-            </div>
-            <div class="dropdown-menu dropdown-menu-right">
-                <a class="dropdown-item" href="javascript:void(0);">Details</a>
-                <a class="dropdown-item text-danger" href="javascript:void(0);">Cancel</a>
-            </div>
-        </div>
-    </div>
-</td>
-</tr><tr role="row" class="even">
-<td class="sorting_1">
-   
-</td>
-<td>#1</td>
-<td>2021-05-01 04:17:12 </td>
-<td>
-    <div class="media">
-   
-        <div class="media-body text-nowrap">
-            <h6 class="text-black font-w600 fs-16 mb-0">Metatrader 5 Trader Dynamic Index TDI indicator alert </h6>
-            <span class="fs-14">python </span>
-      
-        </div>
-    </div>
-</td>
-<td>Fixed project</td>
+<!--Table head-->
+<thead>
+  <tr>
 
+    <th>Name</th>
+    
+    <th>Budget</th>
+   
+    <th>Description</th>
+    <th>Cover Letter</th>
+  </tr>
+
+</thead>
+<!--Table head-->
+
+<!--Table body-->
+<tbody>
+  <tr class="table-info">
+  
+    <td>Ashish</td>
+   
+    <td>56Rs</td>
+   
+    <td style="
+    width: 500px;
+">
+  <div class="form-group shadow-textarea">
+
+  <textarea disabled class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="3" placeholder="Write something here..."style="height:100px;resize: none;">We just updated the name of our company and transferred to a new domain. Hoping to find an SEO expert to redirect the old links to the new site to help improve SEO</textarea>
+</div>
+  </td>
 <td>
-    <div class="d-flex">
-        <a class="contact-icon" href="#"><i class="fa fa-cloud-download"></i> </a>
-    </div>
+
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Auto width -->
+<button class="btn"><i class="fa fa-download"></i> Download</button>
+<style>
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+</style>
+
 </td>
-<td>
-    <div class="d-flex align-items-center">
-        <a class="btn rounded btn-success mr-3 ml-auto" href="#">Pending</a>
-        <div class="dropdown float-right custom-dropdown mb-0">
-            <div class="" data-toggle="dropdown">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z" stroke="#2E2E2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M12 6C12.5523 6 13 5.55228 13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6Z" stroke="#2E2E2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M12 20C12.5523 20 13 19.5523 13 19C13 18.4477 12.5523 18 12 18C11.4477 18 11 18.4477 11 19C11 19.5523 11.4477 20 12 20Z" stroke="#2E2E2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-            </div>
-            <div class="dropdown-menu dropdown-menu-right">
-                <a class="dropdown-item" href="javascript:void(0);">Details</a>
-                <a class="dropdown-item text-danger" href="javascript:void(0);">Cancel</a>
-            </div>
-        </div>
-    </div>
+
+  </tr>
+  <tr>
+    
+    <td>Shivam</td>
+   
+    <td>25RS</td>
+  
+    <td style="
+    width: 500px;
+">
+  <div class="form-group shadow-textarea">
+ 
+  <textarea disabled class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="3" placeholder="Write something here..."style="height:100px;resize: none;">I'm looking for someone to convert an image into an HTML email.  Will need the help uploading the images to my server and then adjusting the tags to match the links accordingly.</textarea>
+</div>
+  </td>
+  
+  <td>
+
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Auto width -->
+<button class="btn"><i class="fa fa-download"></i> Download</button>
+<style>
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+</style>
+
 </td>
-</tr></tbody>
-    </table></div>
+
+  </tr>
+  <tr class="table-info">
+   
+    <td>Shivom</td>
+   
+    <td>20RS</td>
+    
+    <td>
+  <div class="form-group shadow-textarea">
+
+  <textarea disabled class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="3" placeholder="Write something here..."style="height:100px;resize: none;">It is important that you understand that I DO NOT want all links created in one day.
+I need a constant feed of links. 
+</textarea>
+</div>
+  </td>
+  <td>
+
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Auto width -->
+<button class="btn"><i class="fa fa-download"></i> Download</button>
+<style>
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+</style>
+
+</td>
+  </tr>
+ 
+  
+</tbody>
+<!--Table body-->
+
+
+</table>
+<!--Table-->
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       </div>
 </div>
 </div>
 </div>
@@ -567,7 +649,7 @@
 
 
 
-	</div>
+	</d     iv>
 </div>
 
 
