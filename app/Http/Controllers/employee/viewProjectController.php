@@ -68,9 +68,23 @@ class viewProjectController extends Controller
    public function myviewproject($id){
 
     $project = DB::select("select * from projects WHERE id = $id");
-    return view('employee.myviewproject',['preview_project'=>$project]);
+    $apply = DB::select("select * from apply_projects WHERE project_id = $id ");
+    return view('employee.myviewproject',['preview_project'=>$project,'apply'=>$apply]);
 
    }
+
+
+
+   public static function Convert_id_to_name($user_id){
+   
+    $project = DB::select("SELECT name from users WHERE id = $user_id");
+
+    return $project;
+   
+
+   }
+
+  
 
 
 }

@@ -177,7 +177,7 @@ Main wrapper start
                             <img src="{{ asset('xhtml/images/profile/17.jpg') }}" width="20" alt=""/>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
-                            <a href="app-profile.html" class="dropdown-item ai-icon">
+                            <a href="" class="dropdown-item ai-icon">
                                 <svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" class="text-primary" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
                                 <span class="ml-2">Profile </span>
                             </a>
@@ -221,21 +221,21 @@ Main wrapper start
                 </a>
             </li>
 
-            <li><a class="ai-icon" href="viewproject">
+            <li><a class="ai-icon" href="{{ asset('viewproject') }}">
                     <i class="flaticon-381-heart"></i>
                     <span class="nav-text">My Projects</span>
                 </a>
             
             </li>
 
-            <li><a class="ai-icon" href="addproject" >
+            <li><a class="ai-icon" href="{{ asset('addproject') }}" >
                     <i class="flaticon-381-layer-1"></i>
                     <span class="nav-text">Add Projects</span>
                 </a>
     
             </li>
 
-            <li><a class="ai-icon" href="view_application" >
+            <li><a class="ai-icon" href="{{ asset('view_application') }}" >
                     <i class="flaticon-381-television"></i>
                     <span class="nav-text">Proposal</span>
                 </a>

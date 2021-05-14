@@ -209,7 +209,7 @@
 </a>
 </div>
 <div class="row">
-<div class="col-xl-12" style="   padding-left: 100px;">
+<div class="col-xl-12" style="">
 <div class="table-responsive">
     <div id="example5_wrapper" class="dataTables_wrapper no-footer">
     
@@ -466,19 +466,40 @@
        
        <!--Table-->
 <table class="table table-striped w-auto" >
+<?php  
+
+use \App\Http\Controllers\employee\viewProjectController;
+
+?>
+
+<style>
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+</style>
+
 
 <!--Table head-->
 <thead>
   <tr>
 
-    <th>Name</th>
-    
+    <th style="width: 200px;">Name</th>
     <th>Budget</th>
-   
     <th>Description</th>
     <th>Cover Letter</th>
     <th>Contact</th>
-                <th>Status</th>
+    <th>Status</th>
   </tr>
 
 </thead>
@@ -486,112 +507,38 @@
 
 <!--Table body-->
 <tbody>
+@foreach ($apply as $free_apply)
   <tr class="table-info">
   
-    <td>Ashish</td>
-   
-    <td>56Rs</td>
-   
-    <td style="
-    width: 500px;
-">
-  <div class="form-group shadow-textarea">
+    <td style="width: 200px;"><?php
 
-  <textarea disabled class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="3" placeholder="Write something here..."style="height:100px;resize: none;">We just updated the name of our company and transferred to a new domain. Hoping to find an SEO expert to redirect the old links to the new site to help improve SEO</textarea>
-</div>
-  </td>
-<td>
+        $name_array = viewProjectController::Convert_id_to_name($free_apply->free_id);
+        foreach($name_array as $value){
 
-<!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        echo $value->name; 
 
-<!-- Auto width -->
-<button class="btn"><i class="fa fa-download"></i> Download</button>
-<style>
-.btn {
-  background-color: DodgerBlue;
-  border: none;
-  color: white;
-  padding: 12px 30px;
-  cursor: pointer;
-  font-size: 20px;
-}
-
-/* Darker background on mouse-over */
-.btn:hover {
-  background-color: RoyalBlue;
-}
-
-</style>
-
-</td>
-
-<td>
-    <div class="d-flex">
-        <a class="contact-icon"   href="#"><i class="las la-envelope" style="margin-top:10px;" ></i></a>
-    </div>
-</td>
-<td>
-    <div class="d-flex align-items-center">
-        <a class="btn rounded btn-success mr-3 ml-auto" href="#">Pending</a>
-        <div class="dropdown float-right custom-dropdown mb-0">
-            <div class="" data-toggle="dropdown">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z" stroke="#2E2E2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M12 6C12.5523 6 13 5.55228 13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6Z" stroke="#2E2E2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M12 20C12.5523 20 13 19.5523 13 19C13 18.4477 12.5523 18 12 18C11.4477 18 11 18.4477 11 19C11 19.5523 11.4477 20 12 20Z" stroke="#2E2E2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-            </div>
-            <div class="dropdown-menu dropdown-menu-right">
-                <a class="dropdown-item" href="javascript:void(0);">Details</a>
-                <a class="dropdown-item text-danger" href="javascript:void(0);">Cancel</a>
-            </div>
-        </div>
-    </div>
-</td>
-  </tr>
-
-
-
-  
-  <tr>
+        }
     
-    <td>Shivam</td>
-   
-    <td>25RS</td>
-  
-    <td style="
-    width: 500px;
-">
+    ?></td>
+    <td>{{$free_apply->price}}</td>
+    <td style="width: 500px;">
   <div class="form-group shadow-textarea">
- 
-  <textarea disabled class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="3" placeholder="Write something here..."style="height:100px;resize: none;">I'm looking for someone to convert an image into an HTML email.  Will need the help uploading the images to my server and then adjusting the tags to match the links accordingly.</textarea>
+
+  <textarea disabled class="form-control z-depth-1" 
+  id="exampleFormControlTextarea6" rows="3" placeholder="Write something here.." 
+  style="height:100px;resize: none;">
+  
+  {{$free_apply->ctext}}
+  
+  </textarea>
 </div>
   </td>
-  
-  <td>
+<td>
 
-<!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- Auto width -->
 <button class="btn"><i class="fa fa-download"></i> Download</button>
-<style>
-.btn {
-  background-color: DodgerBlue;
-  border: none;
-  color: white;
-  padding: 12px 30px;
-  cursor: pointer;
-  font-size: 20px;
-}
 
-/* Darker background on mouse-over */
-.btn:hover {
-  background-color: RoyalBlue;
-}
-
-</style>
 
 </td>
 
@@ -600,7 +547,6 @@
         <a class="contact-icon"   href="#"><i class="las la-envelope" style="margin-top:10px;" ></i></a>
     </div>
 </td>
-
 <td>
     <div class="d-flex align-items-center">
         <a class="btn rounded btn-success mr-3 ml-auto" href="#">Pending</a>
@@ -620,71 +566,13 @@
     </div>
 </td>
   </tr>
-  <tr class="table-info">
-   
-    <td>Shivom</td>
-   
-    <td>20RS</td>
-    
-    <td>
-  <div class="form-group shadow-textarea">
 
-  <textarea disabled class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="3" placeholder="Write something here..."style="height:100px;resize: none;">It is important that you understand that I DO NOT want all links created in one day.
-I need a constant feed of links. 
-</textarea>
-</div>
-  </td>
-  <td>
+  @endforeach
 
-<!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<!-- Auto width -->
-<button class="btn"><i class="fa fa-download"></i> Download</button>
-<style>
-.btn {
-  background-color: DodgerBlue;
-  border: none;
-  color: white;
-  padding: 12px 30px;
-  cursor: pointer;
-  font-size: 20px;
-}
 
-/* Darker background on mouse-over */
-.btn:hover {
-  background-color: RoyalBlue;
-}
 
-</style>
-
-</td>
-
-<td>
-    <div class="d-flex">
-        <a class="contact-icon"   href="#"><i class="las la-envelope" style="margin-top:10px;" ></i></a>
-    </div>
-</td>
-
-<td>
-    <div class="d-flex align-items-center">
-        <a class="btn rounded btn-success mr-3 ml-auto" href="#">Pending</a>
-        <div class="dropdown float-right custom-dropdown mb-0">
-            <div class="" data-toggle="dropdown">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z" stroke="#2E2E2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M12 6C12.5523 6 13 5.55228 13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6Z" stroke="#2E2E2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M12 20C12.5523 20 13 19.5523 13 19C13 18.4477 12.5523 18 12 18C11.4477 18 11 18.4477 11 19C11 19.5523 11.4477 20 12 20Z" stroke="#2E2E2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-            </div>
-            <div class="dropdown-menu dropdown-menu-right">
-                <a class="dropdown-item" href="javascript:void(0);">Details</a>
-                <a class="dropdown-item text-danger" href="javascript:void(0);">Cancel</a>
-            </div>
-        </div>
-    </div>
-</td>
-  </tr>
+  
  
   
 </tbody>
@@ -693,6 +581,9 @@ I need a constant feed of links.
 
 </table>
 <!--Table-->
+
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
        
        
        
